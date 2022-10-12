@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*Reset*/
+:root{
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --vg-blue: hsl(212, 21%, 14%);
+  --dg-blue: hsl(228, 12%, 48%);
+  --white : #fff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--cream);
+  font-family: "Montserrat",sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 1rem 0 0 1rem;
+
+}
+
+.container{
+  max-width: 1000px;
+  margin: 50px auto;
+  overflow: auto;
+  padding: 0 40px;
+  
+}
+
+
+.grid-container{
+  width: 100%;
+  border-radius: 1rem;
+  /* box-shadow: 2px 2px 2px rgba(0,0,0,0.1); */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  overflow: hidden;
+}
+
+.text-container{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+.text-container .overview{
+  
+  font-weight: lighter;
+  font-size: 1rem;
+  color: var(--dg-blue);
+  letter-spacing: 5px;
+}
+
+.product__name{
+  font-family: 'Fraunces', sans-serif;
+  color: var(--vg-blue);
+  font-size: 3rem;
+}
+
+.text-container .product__description{
+  color: var(--dg-blue);
+  line-height: 2;
+  font-size: 1.1rem;
+  text-align: start;
+
+}
+.price{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.discounted__price{
+  color: var(--dark-cyan);
+  font-family: 'Fraunces', sans-serif;
+  font-size: 3.5rem;
+}
+
+.original__price{
+  color:var(--dg-blue);
+  text-decoration: line-through;
+  font-size: 1.1rem;
+}
+
+button{
+  align-self: center;
+  width: 100%;
+  background-color: var(--dark-cyan);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+}
+
+button:hover,
+button:active{
+  background-color: hsl(158, 40%, 18%);
+  cursor: pointer;
+}
