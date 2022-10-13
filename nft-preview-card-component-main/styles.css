@@ -1,0 +1,138 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Root elements */
+:root{
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+}
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+.img-overlay img{
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.img-overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color:hsla(178, 100%, 50%, 0.4);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.img-container:hover .img-overlay{
+  cursor: pointer;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+/* ----------------------------------- */
+body{
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg);
+}
+
+.img-container{
+  width: 90%;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container{
+  max-width: 450px;
+  width: 90%;
+  background-color: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.product-description{
+  width: 90%;
+}
+.product-description h2{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.name-link:hover,
+.name-link:active,
+.creator a:hover,
+.creator a:active{
+  color:var(--cyan)
+}
+
+.product-description p{
+  color: var(--soft-blue);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.product-amt{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icon{
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.product-amt h4{
+  color: var(--cyan);
+  vertical-align: middle;
+}
+
+.creator{
+  border-top: 2px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: inherit;
+  font-size: 0.95rem;
+}
+
+.creator img{
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.creator{
+  color:var(--soft-blue)
+}
+
+
