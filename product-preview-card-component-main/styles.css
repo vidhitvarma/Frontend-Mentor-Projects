@@ -113,7 +113,7 @@ button:active{
   cursor: pointer;
 }
 
-@media (max-width: 628px){
+@media (max-width: 790px){
   .grid-container{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr)
