@@ -99,3 +99,12 @@ body{
   color: var(--very-light-gray);
   background-color: transparent;
 }
+
+
+@media (max-width: 768px){
+  .container{
+    width: 90%;
+    margin: 60px 0;
+    grid-template-columns: 1fr;
+  }
+}
