@@ -17,9 +17,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
-  text-decoration: none;
-}
 
 body{
   font-family: 'Lexend Deca',sans-serif;
@@ -51,24 +48,13 @@ body{
 .sedans{
   background-color: var(--bright-orange);
 }
-.sedans a{
-  color: var(--bright-orange);
-}
 
 .suv{
   background-color: var(--dark-cyan);
 }
 
-.suv a{
-  color: var(--dark-cyan);
-}
-
 .luxury{
   background-color: var(--very-dark-cyan);
-}
-
-.luxury a{
-  color: var(--very-dark-cyan);
 }
 
 .car__class{
@@ -87,7 +73,29 @@ body{
 }
 
 .car__details{
+  text-decoration: none;
   border-radius: 20px;
   padding: 10px 25px;
   background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+}
+
+.sedans a{
+  color: var(--bright-orange);
+}
+
+.suv a{
+  color: var(--dark-cyan);
+}
+
+.luxury a{
+  color: var(--very-dark-cyan);
+}
+
+.car__details:hover,
+.car__details:active{
+  color: var(--very-light-gray);
+  background-color: transparent;
 }
