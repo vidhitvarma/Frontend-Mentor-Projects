@@ -4,35 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css">
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
-
     <title>Frontend Mentor | Social proof section</title>
   </head>
   <body>
-    10,000+ of our users love our products.
-
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
+    <div class="container">
+      <div class="upper-container">
+        <div class="description">
+          <h2 class="description__header">
+            10,000+ of our users love our products.
+          </h2>
+          <p class="description__para">
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+        <!-- ratings -->
+        <div class="product__ratings">
+          <div class="website__review">
+            <div class="star__rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+            </div>
+            <span>Rated 5 stars in Reviews</span>
+          </div>
+          <div class="website__review">
+            <div class="star__rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+            </div>
+            <span>Rated 5 stars in Report Guru</span>
+          </div>
+          <div class="website__review">
+            <div class="star__rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+              <img src="./images/icon-star.svg" alt="5 star rating">
+            </div>
+            <span>Rated 5 stars in BestTech</span>
+          </div>
+          <!-- Third party ratings end div -->
+        </div>
+      </div>
+      <!-- User data -->
+      
+      <div class="user__reviews lower-container">
+        <div class="user">
+          <div class="user__name">
+            <img src="./images/image-colton.jpg" alt="">
+            <div class="credentials">
+              <h3>Colton Smith</h3>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <p class="user__review">
+          "We needed the same printed design as the one we hadordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+          </p>
+        </div>
+        <div class="user">
+          <div class="user__name">
+            <img src="./images/image-irene.jpg" alt="">
+            <div class="credentials">
+              <h3>Irene Roberts</h3>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <p class="user__review">
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </div>
+        <div class="user">
+          <div class="user__name">
+            <img src="./images/image-anne.jpg" alt="">
+            <div class="credentials">
+              <h3>Anne Wallace</h3>
+              <p>Verified Buyer</p>
+            </div>
+          </div>
+          <p class="user__review">
+            "Put an order with this company and can only praise them for the very high
     standard. Will definitely use them again and recommend them to everyone!"
+          </p>
+        </div>
+        <!-- user reviews end div -->
+      </div>
+      <!-- container end div -->
+    </div>
   </body>
 </html>

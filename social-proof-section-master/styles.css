@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+  --very-dark-magenta: hsl(300,43%,22%);
+  --soft-pink: hsl(333,80%,67%);
+
+  --dark-grayish-magenta: hsl(303,10%,53%);
+  --light-grayish-magenta : hsl(300,24%,96%);
+} 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  border-radius: 50%;
+}
+
+
+body{
+  min-height: 100vh;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.container{
+  margin: 60px 0;
+  width: 90%;
+  text-align: center;
+}
+
+
+.description{
+  margin-bottom: 30px;
+}
+
+.description__header{
+  padding: 2rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 0.8;
+}
+
+.description__para{
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: var(--dark-grayish-magenta);
+}
+
+.website__review{
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  padding: 8px;
+  margin: 20px;
+}
+
+.star__rating{
+  margin: 10px 0;
+}
+
+.star__rating img{
+  margin: 0 4px;
+}
+
+.website__review span{
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--very-dark-magenta);
+}
+
+
+.product__ratings{
+  margin-bottom: 60px;
+}
+
+.user{
+  background-color: var(--very-dark-magenta);
+  color: #fff;
+  text-align: left;
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 16px;
+}
+
+.user__name{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.credentials p{
+  color: var(--soft-pink);
+  font-size: 1.1rem;
+}
+
+.user__name img{
+  max-width: 50px;
+  margin-right: 25px;
+}
+
+.user__review{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* @media (min-width: 768px){
+
+} */
