@@ -71,6 +71,7 @@ body{
 }
 
 .description a{
+  text-align: center;
   padding: 1rem 4rem;
   background-color: #fff;
   border-radius: 2rem;
@@ -105,4 +106,39 @@ body{
 .footer a:is(:hover,:active){
   color: var(--soft-magenta);
   border-color: var(--soft-magenta);
+}
+
+@media (max-width: 768px){
+  body{
+    background: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--violet);
+  }
+  .container{
+    width: 80%;
+  }
+
+  .grid-container{
+    grid-template-columns: 1fr;
+    margin-bottom: 8rem;
+  }
+
+  .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h1{
+    font-size: 2.5rem;
+  }
+
+  .description a{
+    padding: 1rem 8rem;
+  }
+
+  .footer{
+    justify-content:  center;
+  }
 }
