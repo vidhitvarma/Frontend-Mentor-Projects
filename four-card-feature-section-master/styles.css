@@ -21,4 +21,78 @@
 body{
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  text-align: left;
+  width: 80%;
+  margin: 60px 0;
+}
+
+.heading{
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+
+.describe{
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+
+
+.heading h2{
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.description-para{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--grayish-blue);
+  margin-bottom: 3rem;
+}
+
+.card{
+  padding: 1.5rem;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border-top: 5px solid #000;
+}
+
+.card h3{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--very-dark-blue);
+}
+
+.card p{
+  color: var(--grayish-blue);
+}
+
+.card img{
+  margin-top: 1.8rem;
+  display: block;
+  margin-left: auto;
+}
+
+.cyan{
+  border-color: var(--cyan);
+}
+
+.red{
+  border-color: var(--red);
+}
+
+.orange{
+  border-color: var(--orange);
+}
+
+.blue{
+  border-color: var(--blue);
 }
