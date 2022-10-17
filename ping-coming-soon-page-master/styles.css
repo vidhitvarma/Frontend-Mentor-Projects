@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+  --blue-primary : hsl(223, 87%, 63%);
+  --pale-blue-sc : hsl(223, 100%, 88%);
+  --light-red-sc : hsl(354, 100%, 66%);
+  --gray : hsl(0, 0%, 59%);
+  --very-dark-blue : hsl(209, 33%, 12%);
+}
