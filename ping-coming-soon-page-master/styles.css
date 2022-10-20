@@ -44,9 +44,9 @@ body{
 }
 
 .company-icon{
-  max-width: 100px;
+  max-width: 80px;
   /* margin: 60px 0; */
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .container h2{
@@ -67,7 +67,7 @@ body{
 
 form {
   width: 80%;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-rows: 40% 20% 40%;
   row-gap: 20px;
@@ -84,30 +84,40 @@ form {
   padding: 0.8rem 2rem;
   font-size: 0.9rem;
   border-radius: 1.5em;
-  
   grid-row: 1/2;
+  margin-bottom: 0.5rem;
 }
 
 .form-control input:focus{
   outline: 0;
 }
 
-.form-control.error input{
-  border-color: var(--light-red-sc);
-}
-
-::placeholder{
-  color: var(--gray);
-}
-
 .error-state{
+  width: 100%;
+  position: absolute;
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--light-red-sc);
   text-align: center;
   display: block;
-  grid-row: 2/3;
+  font-size: 0.75rem;
+  visibility: hidden;
 }
+
+.form-control.error input{
+  border-color: var(--light-red-sc);
+}
+
+.form-control.error .error-state{
+  display: block;
+}
+
+
+::placeholder{
+  color: var(--gray);
+}
+
+
 
 .notify{
   width: 100%;
@@ -117,6 +127,7 @@ form {
   font-size: 0.8rem;
   border: 1px solid var(--blue-primary);
   padding: 0.8rem 2rem;
+  /* margin-top: 1rem; */
   border-radius: 1.5rem;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -128,7 +139,7 @@ form {
 .social-icons{
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .social-icons a{
