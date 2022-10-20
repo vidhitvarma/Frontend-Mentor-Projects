@@ -138,12 +138,14 @@ body{
   }
 
   .first-rating{
-    margin-right: 100px;
-    margin-left: -100px;
+    transform: translateX(-100px);
+    /* margin-right: 100px;
+    margin-left: -100px; */
   }
   .second-rating{
-    margin-right: 50px;
-    margin-left: -50px;
+    transform: translateX(-50px);
+    /* margin-right: 50px;
+    margin-left: -50px; */
   }
 
   .star__rating{
@@ -163,12 +165,13 @@ body{
   }
 
   .second-user{
-    margin-top: 45px;
+    transform: translateY(30px);
+    /* margin-top: 45px; */
     /* margin-bottom: -0px; */
   }
 
   .third-user{
-    margin-top: 75px;
+    transform: translateY(60px);
     /* margin-bottom: -20px; */
   }
 
