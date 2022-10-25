@@ -42,6 +42,7 @@ body{
   border-radius: 0.7rem;
   padding: 3rem;
   margin: 1.5rem;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 .name{
@@ -79,10 +80,12 @@ body{
 
 .purple img{
   border-color: #996ed9;
+  box-shadow: none;
 }
 
 .grayish-blue{
   background-color: var(--very-dark-grayish-blue);
+  box-shadow: none;
 }
 
 .grayish-blue img{
@@ -91,7 +94,7 @@ body{
 
 .blackish-blue{
   background-color: var(--very-dark-blackish-blue);
-  
+  box-shadow: none;
 }
 
 .blackish-blue img{
