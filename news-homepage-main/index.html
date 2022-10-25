@@ -9,46 +9,92 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
+  <header class="container">
+    <div class="header-container">
+      <img src="./assets/images/logo.svg" alt="Website logo">
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Catergories</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="container">
+    <div class="grid-container">
+      <div class="main-container">
+        <div class="inner-container">
+          <div class="image-container">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="desktop-bg" class="desktop-image">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="mobile-bg" class="mobile-image">
+          </div>
+          <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+          <div class="text-container">
+            <p>We dive into the next evolution of the that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+            </p>
+            <a href="#" class="read-more">read more</a>
+          </div>  <!-- End of text-container-->
+        </div> <!-- End of inner container-->
+      </div> <!--End of main-container-->
+      <div class="sidelines">
+        <h1>New</h1>
+        <!-- Card 1 -->
+        <div class="sidelines-card">
+          <a href="" class="clickable">Hydrogen VS Electric Cars</a>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div> <!-- Card 1 end-->
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+        <!-- Card 2 -->
+        <div class="sidelines-card">
+          <a href="" class="clickable">The Downsides of AI Artistry</a>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div> <!-- Card 2 end-->
 
-  The Bright Future of Web 3.0?
+        <!-- Card 3 -->
+        <div class="sidelines-card">
+          <a href="" class="clickable">Is VC Funding Drying Up?</a>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>  <!-- Card 3 end -->
+      </div> <!-- End of sidelines-->
+    </div> <!-- End of grid container-->
+    <div class="bottom-headings container">
+      <!-- Bt-headings 1 -->
+      <div class="bottom-heading bt-first">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro pc">
+        <div class="data">
+          <h1>01</h1>
+          <a href="" class="clickable">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrade?</p>
+        </div>
+      </div> <!-- end of header 1-->
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+      <div class="bottom-heading bt-second">
+        <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops">
+        <div class="data">
+          <h1>02</h1>
+          <a href="" class="clickable">Top 10 Laptops of 2022</a>
+          <p>Our best picks for various needs and budgets</p>
+        </div>
+      </div> <!-- end of header 2-->
 
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="bottom-heading bt-third">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="Top laptops">
+        <div class="data">
+          <h1>03</h1>
+          <a href="" class="clickable">Top Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div> <!-- end of header 3-->
+    </div> <!--End of bottom headings -->
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
