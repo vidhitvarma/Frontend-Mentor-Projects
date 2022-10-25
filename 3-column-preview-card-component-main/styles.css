@@ -19,10 +19,12 @@
 }
 
 body{
+  position: relative;
   font-family: 'Lexend Deca',sans-serif;
   font-size: 15px;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--trans-white);
@@ -100,6 +102,20 @@ body{
   background-color: transparent;
 }
 
+
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer .container{
+  margin: 0 auto;
+}
+
+.attribution{
+  text-align: center;
+}
 
 @media (max-width: 768px){
   .container{
