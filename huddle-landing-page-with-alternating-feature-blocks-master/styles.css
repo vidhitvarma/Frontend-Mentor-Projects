@@ -273,7 +273,7 @@ footer{
   color: blueviolet;
 }
 
-@media (min-width:800px){
+@media (min-width:900px){
   .container{
     max-width: 1400px;
   }
@@ -302,18 +302,24 @@ footer{
     font-size: 2.8rem;
   }
 
-  .intro .image-container{
+  /* .intro .image-container{
     min-width: 700px;
+  } */
+
+  .image-container img{
+    width: 100%;
   }
 
   .card{
     flex-direction: row;
-    padding: 2rem 6rem;
+    justify-content: space-between;
+    padding: 2rem 8rem;
   }
 
   .card-text-container{
+    max-width: 480px;
     text-align: start;
-    margin: 0 10rem;
+    /* margin: 0 10rem; */
   }
 
   .card-text-container h3{
@@ -325,7 +331,8 @@ footer{
   }
 
   .card .image-container{
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 500px;
   }
 
   .card-img-right{
