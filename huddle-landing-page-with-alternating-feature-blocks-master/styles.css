@@ -157,7 +157,7 @@ main{
   font-family: inherit;
   padding: 2rem 0.5rem;
   font-size: 1.2rem;
-  margin: -100px auto 4rem;
+  margin: -100px auto 4rem
 }
 
 .special-header{
@@ -313,7 +313,7 @@ footer{
   .card{
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 8rem;
+    padding: 2rem 6rem;
   }
 
   .card-text-container{
