@@ -29,8 +29,7 @@ img{
 body{
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
-  
-  margin: 60px 0;
+  margin: 40px 0 0;
   /* overflow: hidden; */
 }
 
@@ -82,6 +81,12 @@ label{
   border: 1px solid var(--blue-primary);
 }
 
+.form input:focus{
+  outline: none;
+  border-color: var(--blue-primary);
+}
+
+
 ::placeholder{
   color: var(--gray);
 }
@@ -94,7 +99,7 @@ small{
   bottom: -36px;
   left: 0;
   color: var(--light-red-sc);
-  display: none;
+  visibility: hidden;
 }
 
 .btn-submit{
@@ -118,11 +123,15 @@ small{
 
 .email-checker.error input{
   border-color: var(--light-red-sc);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .email-checker.error small{
-  display: inline-block ;
+  visibility: visible ;
+}
+
+.email-checker.success input{
+  border-color: #2ecc71;
 }
 
 .main-img-container{
@@ -155,6 +164,7 @@ small{
   margin-top: 1.5rem;
   color: var(--gray);
   font-size: 0.9rem;
+  margin-bottom: 4rem;
 }
 
 /* Footer */
@@ -162,8 +172,6 @@ small{
 footer{
   width: 100%;
   font-size: 0.9rem;
-  position: fixed;
-  bottom: 0;
 }
 
 .attribution{
@@ -223,6 +231,10 @@ footer{
   .social-icon{
     width: 40px;
     height: 40px;
+  }
+
+  .copyright{
+    margin-bottom: 1.2rem;
   }
 
 }
