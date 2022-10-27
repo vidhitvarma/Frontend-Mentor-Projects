@@ -37,6 +37,8 @@ body{
 }
 
 .bg-container{
+  width: 100%;
+  max-width: 2000px;
   background: url(./images/bg-hero-mobile.svg);
   background-color: hsla(193, 100%, 96%,0.6);
   background-size: cover;
@@ -193,23 +195,31 @@ footer{
 
 .flex-divide{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1rem;
 }
 
-.footer-group{
+.logo-box{
+  margin-bottom: 3rem;
+  font-size:1rem
+}
+
+.link-group{
+  width: 90%;
+  margin: auto;
   font-size: 1rem;
 }
 
-.footer-group p{
+.link-group p{
   margin-bottom: 0.8rem;
 }
 
 .self-links{
   color: #fff;
+  font-size: 1.2rem;
 }
 
-.footer-group .self-links:is(:hover,:active){
+.link-group .self-links:is(:hover,:active){
   text-decoration: underline;
 }
 
@@ -225,8 +235,10 @@ footer{
 }
 
 .social-icon{
+  text-align: center;
   margin: 0 0.2rem;
   display: inline-block;
+  min-width: 50px;
   max-width: 50px;
   max-height: 50px;
   border: 1px solid #fff;
@@ -237,4 +249,129 @@ footer{
 .social-icon:is(:hover,:active){
   border-color: var(--pink);
   color: var(--pink);
+}
+
+.copyright{
+  font-size: 0.8rem;
+}
+
+/* Attribution */
+.attribution{
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+}
+
+.attribution a{
+  color: var(--pink);
+}
+
+.attribution a:hover{
+  color: blueviolet;
+}
+
+@media (min-width:800px){
+  .container{
+    max-width: 1400px;
+  }
+  .logo-container{
+    width: 180px;
+  }
+
+  .trial{
+    font-size: 1rem;
+  }
+
+  .intro{
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .intro-text{
+    margin-right: 6rem;
+    text-align: start;
+  }
+
+  .intro-text h2{
+    font-size: 2.8rem;
+  }
+
+  .intro .image-container{
+    min-width: 700px;
+  }
+
+  .card{
+    flex-direction: row;
+    padding: 2rem 6rem;
+  }
+
+  .card-text-container{
+    text-align: start;
+    margin: 0 10rem;
+  }
+
+  .card-text-container h3{
+    font-size: 1.8rem;
+  }
+
+  .card-text-container p{
+    font-size: 1.1rem;
+  }
+
+  .card .image-container{
+    max-width: 400px;
+  }
+
+  .card-img-right{
+    flex-direction: row-reverse;
+  }
+
+  .special-card{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .special-header{
+    font-size: 1.5rem;
+  }
+
+  .footer-flex{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .logo-box{
+    grid-column: 1/2;
+  }
+
+  .group-left{
+    grid-column: 2/3;
+  }
+
+  .grid-right{
+    grid-column: 3/4;
+  }
+
+  .footer-image-container{
+    width: 200px;
+  }
+
+  .location{
+    font-size: 0.8rem;
+  }
+
+  .social-icons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
 }
