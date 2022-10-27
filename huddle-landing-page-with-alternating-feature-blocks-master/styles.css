@@ -167,6 +167,7 @@ main{
 
 /* Main Footer */
 .full-footer{
+  margin-top: 2rem;
   width: 100%;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -329,6 +330,10 @@ footer{
 
   .card-img-right{
     flex-direction: row-reverse;
+  }
+
+  .full-footer{
+    margin-top: 6rem;
   }
 
   .special-card{
