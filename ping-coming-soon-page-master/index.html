@@ -10,33 +10,43 @@
 </head>
 <body>
   <div class="container">
-    <img src="./images/logo.svg" alt="Ping Icon" class="company-icon">
-    <h2>We are launching <span class="highlight">soon!</span></h2>
-    <p class="subscribe">Subscribe and get notified</p>
-    <form action="" id="form ">
-      <div class="form-control ">
-        <input type="email" id="email" name="email" placeholder="Your email address..." />
-        <small class="error-state">Please provide a valid email address</small>
-      </div>
-      <button class="notify">Notify Me</button>
-    </form>
-    <div class="main-img">
-      <img src="./images/illustration-dashboard.png" alt="dashboard">
+    <div class="image-container">
+      <img src="./images/logo.svg" alt="logo">
     </div>
-    <ul class="social-icons">
-      <li>
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      </li>
-      <li>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-      </li>
-    </ul>
+    <p class="main-title">We are launching <span class="highlight">soon!</span></p>
+    <p class="sub">Subscribe and get notified</p>
+    <form class="form">
+      <label for="email" class="email-checker">
+        <input type="text" name="email" id="email" placeholder="Your email address...">
+        <small>Error message</small>
+      </label>
+      <button type="submit" class="btn-submit">Notify Me</button>
+    </form>
+    <div class="main-img-container">
+      <img src="./images/illustration-dashboard.png" alt="illustration-dashboard">
+    </div>
+    <div class="social-icons">
+      <a href="" class="social-icon">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="" class="social-icon">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
-    
-  </div>  
+  </div>
+  <footer>
+    <div class="footer-container">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+      </p>
+    </div>
+  </footer>
+  <!-- Script tag -->
   <script src="./app.js"></script>
 </body>
 </html>

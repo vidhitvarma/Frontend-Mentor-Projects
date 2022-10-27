@@ -29,177 +29,151 @@ img{
 body{
   font-family: 'Libre Franklin', sans-serif;
   font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
+  margin: 60px 0;
   /* overflow: hidden; */
 }
 
 .container{
-  margin: 30px auto;
-  width: 90%;
+  width: 80%;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 
-.company-icon{
-  max-width: 80px;
-  /* margin: 60px 0; */
-  margin-bottom: 30px;
+.image-container{
+  max-width: 100px;
+  margin-bottom: 2rem;
 }
 
-.container h2{
+.main-title{
+  font-size: 1.6rem;
   color: var(--gray);
-  font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .highlight{
+  font-weight: 700;
   color: var(--very-dark-blue);
-  font-weight: 600;
 }
 
-.subscribe{
+.sub{
+  font-weight: 300;
   font-size: 1rem;
-  margin-bottom: 2.2rem;
-}
-
-form {
-  width: 80%;
   margin-bottom: 2rem;
-  display: grid;
-  grid-template-rows: 40% 20% 40%;
-  row-gap: 20px;
 }
 
-.form-control{
+form{
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+label{
   position: relative;
 }
 
-.form-control input{
-  display: block;
+.form input{
+  font-family: inherit;
+  border-radius: 3rem;
   width: 100%;
+  padding: 0.9rem 2rem;
   border: 1px solid var(--blue-primary);
-  padding: 0.8rem 2rem;
-  font-size: 0.9rem;
-  border-radius: 1.5em;
-  grid-row: 1/2;
-  margin-bottom: 0.5rem;
 }
-
-.form-control input:focus{
-  outline: 0;
-}
-
-.error-state{
-  width: 100%;
-  position: absolute;
-  font-size: 0.8rem;
-  font-weight: 300;
-  color: var(--light-red-sc);
-  text-align: center;
-  display: block;
-  font-size: 0.75rem;
-  visibility: hidden;
-}
-
-.form-control.error input{
-  border-color: var(--light-red-sc);
-}
-
-.form-control.error .error-state{
-  display: block;
-}
-
 
 ::placeholder{
   color: var(--gray);
 }
 
-
-
-.notify{
+small{
   width: 100%;
-  background-color: var(--blue-primary);
-  color: #fff;
-  font-weight: 700;
+  text-align: center;
   font-size: 0.8rem;
-  border: 1px solid var(--blue-primary);
-  padding: 0.8rem 2rem;
-  /* margin-top: 1rem; */
-  border-radius: 1.5rem;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  color: var(--light-red-sc);
+  display: none;
 }
 
-.main-img {
+.btn-submit{
+  margin-top: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: var(--blue-primary);
   width: 100%;
+  display: block;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  text-align: center;
+  border-radius: 3rem;
+  border: none;
+}
+
+.btn-submit:hover{
+  background-color: hsla(223, 87%, 63%,0.7);
+  cursor: pointer;
+}
+
+.email-checker.error input{
+  border-color: var(--light-red-sc);
+  margin-bottom: 3rem;
+}
+
+.email-checker.error small{
+  display: inline-block ;
+}
+
+.main-img-container{
+  width: 110%;
+  margin-bottom: 6rem;
+}
+
+.social-icon{
+  color: var(--blue-primary);
+  border: 1px solid hsla(0, 0%, 59%,0.3);
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icons{
   display: flex;
-  justify-content: center;
-  margin-top: 5rem;
 }
 
-.social-icons a{
-  width: 50px;
-  height: 50px;
-  font-size: 1rem;
-  text-align: center;
-  color: var(--blue-primary);
-  display: block;
-  margin: 0.5rem;
-  padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+.social-icon:hover{
+  background-color: var(--blue-primary);
+  color: #fff;
 }
 
 .copyright{
+  margin-top: 1.5rem;
   color: var(--gray);
-  font-size: 0.7rem;
-  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-@media (min-width:768px){
-  .container{
-    max-width: 1000px;
-  }
+/* Footer */
 
-  .main-img{
-    width: 70%;
-  }
+footer{
+  width: 100%;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+}
 
-  .error-state{
-    text-align: left;
-    margin-left: 1rem;
-  }
+.attribution{
+  text-align: center;
+}
 
-  .form-control input{
-    display: block;
-    margin-bottom: 0;
-  }
+.attribution a{
+  color: var(--blue-primary);
+}
 
-  form{
-    grid-template-rows: 90% ,10%;
-    grid-template-columns: 75% 25%;
-    column-gap: 20px;
-    row-gap: 5px;
-  }
-
-  .notify:is(:hover,:active){
-    background-color: hsla(223, 87%, 63%,0.8);
-    cursor: pointer;
-  }
-
-  .social-icons{
-    margin-top: 2.2rem;
-  }
-
-  .social-icons a:is(:hover,:active){
-    color: #fff;
-    background-color: var(--blue-primary);
-  }
-
-  
+.attribution a:hover{
+  color:hsla(223, 87%, 63%,0.7);
 }
