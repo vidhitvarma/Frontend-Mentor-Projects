@@ -18,6 +18,7 @@ body{
   font-family: "Montserrat",sans-serif;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 14px;
@@ -31,7 +32,7 @@ img{
 
 .container{
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 3rem 0;
   overflow: auto;
   padding: 0 40px;
   
@@ -47,13 +48,22 @@ img{
   overflow: hidden;
 }
 
+.product__image{
+  height: 100%;
+  display: block;
+} 
+
+.mobile-image{
+  display: none;
+}
+
 .text-container{
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 32px;
+  padding: 2rem 4rem;
 }
 
 .text-container .overview{
@@ -75,7 +85,7 @@ img{
   line-height: 2;
   font-size: 1.1rem;
   text-align: start;
-
+  padding-right: 2rem;
 }
 .price{
   display: grid;
@@ -87,7 +97,7 @@ img{
 .discounted__price{
   color: var(--dark-cyan);
   font-family: 'Fraunces', sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .original__price{
@@ -96,27 +106,73 @@ img{
   font-size: 1.1rem;
 }
 
-button{
-  align-self: center;
+.btn-class{
+  display: flex;
+  justify-content: center;
   width: 100%;
   background-color: var(--dark-cyan);
   color: white;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
-  padding: 15px 20px;
+  padding: 0.8rem;
 }
 
-button:hover,
-button:active{
+.btn-class p{
+  font-family: 'Montserrat' ,sans-serif;
+  font-size:1rem;
+  font-weight: 700;
+}
+
+.icon{
+  width: 18px;
+  margin-right: 1rem;
+}
+
+.btn-class:hover,
+.btn-class:active{
   background-color: hsl(158, 40%, 18%);
   cursor: pointer;
 }
 
-@media (max-width: 790px){
+
+/* Attribution */
+.attribution{
+  font-size: 1rem;
+}
+.attribution a{
+  text-decoration: none;
+  font-family: inherit;
+  color: var(--dg-blue);
+}
+
+.attribution a:hover{
+  color: var(--dark-cyan);
+}
+
+@media (max-width:780px) and (min-width: 482px){
   .grid-container{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr)
+  }
+
+  .desktop-img{
+    display: none;
+  }
+  .mobile-image{
+    display: block;
+  }
+
+
+  .text-container{
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 481px){
+  .grid-container{
+    border-radius: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr
   }
 
   .product__image{
@@ -125,14 +181,30 @@ button:active{
     object-fit: cover;
   }
 
+  .desktop-img{
+    display: none;
+  }
+  .mobile-image{
+    display: block;
+  }
+
   .product__name{
     font-size: 2rem;
     margin-bottom: 15px;
   }
 
+  .text-container{
+    padding: 1rem;
+  }
+
+  .text-container .overview{
+    font-size: 0.8rem;
+  }
+
   .text-container .product__description{
     font-size: 0.9rem;
     margin-bottom: 20px;
+    padding-right: 0;
   }
 
   .price{
@@ -147,9 +219,20 @@ button:active{
     font-size: 0.8rem;
   }
 
-  button{
-    font-size: 1.2rem;
+  .icon{
+    width: 15px;
 
+  }
+
+  .btn-class p{
+    font-size: 0.rem;
+
+  }
+
+  .attribution {
+    
+    text-align: center;
+    font-size: 0.85rem;
   }
 
 }
