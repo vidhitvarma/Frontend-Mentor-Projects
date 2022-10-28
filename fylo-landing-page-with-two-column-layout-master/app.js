@@ -29,7 +29,7 @@ form1.addEventListener('submit',function(e){
   e.preventDefault();
   if(emailTop.value === ''){
     showError(emailTop, "Email can't be empty")
-  }else if(!validateEmail(emailTop)){
+  }else if(!validateEmail(emailTop.value)){
     showError(emailTop,"Please check your email")
   }else{
     showSucces(emailTop);
