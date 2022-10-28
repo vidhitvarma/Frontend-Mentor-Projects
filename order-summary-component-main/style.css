@@ -21,23 +21,24 @@ a{
   font-weight: 700;
 }
 
+img{
+  display: block;
+  width: 100%;
+}
+
 body{
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   background-color: var(--pale-blue);
   font-family: 'Red Hat Display', sans-serif;;
   min-height: 100vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* .bg-card{
-  position: absolute;
-  top:0;
-
-  /* z-index: -1; 
-
-} */
 
 .bg-card svg{
   width: 100%;
@@ -91,7 +92,7 @@ body{
 }
 
 .plan__icon svg{
-  margin-right: 20px;
+  margin-right: 0.9rem;
 }
 
 .plan__price h4{
@@ -103,12 +104,12 @@ body{
   color: var(--desat-blue);
 }
 
-.change-plan{
+.change-plan a{
   color: var(--bright-blue);
 }
 
 .change-plan a:is(:hover,:active){
-  color: var(--bright-blue);
+  color: hsla(245, 75%, 52%,0.5);
   text-decoration: none;
 }
 
@@ -148,29 +149,66 @@ body{
   color: var(--dark-blue)
 }
 
-@media (max-width: 600px){
+footer{
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--desat-blue);
+}
+
+.attribution a{
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.attribution a:hover{
+  color: var(--bright-blue);
+}
+
+@media (min-width:500px) and (max-width: 768px){
+  .description p{
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px){
+
+  body{
+    background: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+  }
+
   .container{
-    width: 80%;
+    width: 90%;
   }
 
   .plan{
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     align-items: center;
+    width: 90%;
+    padding: 0.6rem 1rem;
+  }
+
+  .change-plan a{
+    font-size: 0.9rem;
   }
 
   .description h2{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .description p{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .cnf-payment{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
   .cancel a{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
 }
