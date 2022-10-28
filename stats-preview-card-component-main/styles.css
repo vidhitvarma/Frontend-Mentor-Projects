@@ -23,6 +23,7 @@ body{
   font-size: 15px;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--main-bg);
@@ -39,6 +40,8 @@ body{
   border-radius: 10px;
   margin: 20px 0;
 }
+
+/* Image container */
 .image-container{
   position: relative;
 }
@@ -58,15 +61,19 @@ body{
   background-color: rgba(89, 2, 143, 0.5);;
 }
 
+/* data container*/
+
 
 .preview{
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
   color: #fff;
   margin-top: 30px;
 }
+
+/* Text data */
 
 .preview__header{
   text-align: center;
@@ -82,20 +89,22 @@ body{
   text-align: center;
   color: var(--seventy-five-white);
   line-height: 1.6;
-  font-size: 1rem;
-  /* text-indent: 2rem; */
+  font-size: 1.1rem;
   margin-bottom: 30px;
 }
+
+/* Bottom Stats */
 
 .preview__stats{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  margin-bottom: 2rem;
 }
 
 .stats{
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .stats p{
@@ -106,18 +115,37 @@ body{
   letter-spacing: 1px;
 }
 
+/* Attribution */
+footer{
+  text-align: center;
+}
+
+.attribution{
+  color: #fff;
+}
+
+.attribution a{
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.attribution a:hover{
+  color: rgb(233, 8, 214);
+}
+
 @media (min-width: 960px){
   .container{
-    min-width: 920px;
-    display: flex;
-    flex-direction: row-reverse;
+    /* min-width: 920px; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
     width: 80%;
-    max-width: 1200px;
-    width: 60%;
+    max-width: 1100px;
+    margin-bottom: 10rem;
   }
   .image-container{
     width: 100%;
-    
+    grid-column: 2/3;
   }
 
   .image-container img{
@@ -127,10 +155,15 @@ body{
   }
 
   .preview{
-    padding: 60px;
+    padding: 2rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
     /* margin-right: 30px; */
   }
 
+  .preview__header{
+    font-size: 2.5rem;
+  }
 
   .preview__header, .preview__description{
     text-align: left;
