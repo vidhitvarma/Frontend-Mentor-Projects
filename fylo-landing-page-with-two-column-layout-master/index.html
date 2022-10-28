@@ -38,10 +38,11 @@
           Access them wherever you need, share and collaborate with friends, 
           family, and co-workers.
         </p>
-        <form id="form" class="form">
-          <div class="form-control">
+        <form id="form-top" class="form ">
+          <div class="form-control upper">
             <label for="email"></label>
             <input type="email" id="email" placeholder="Enter your email...">
+            <small class="upper-error">Error message</small>
           </div>
           <button id="btn-submit" class="cta-buttons">Get started</button>
         </form>
@@ -89,10 +90,11 @@
     <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
       If you have any questions, our support team would be happy to help you.
     </p>
-    <form id="form" class="form lower-form">
-      <div class="form-control">
+    <form id="form-bottom" class="form lower-form">
+      <div class="form-control lower">
         <label for="email"></label>
-        <input type="email" id="email" placeholder="email@example.com">
+        <input type="email" id="email-bottom" placeholder="email@example.com">
+        <small class="sub-error">Error message</small>
       </div>
       <button id="btn-submit" class="cta-buttons">Get started For Free</button>
     </form>
@@ -146,5 +148,8 @@
       Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
     </p>
   </div>
+
+  <!-- Script -->
+  <script src="./app.js"></script>
 </body>
 </html>

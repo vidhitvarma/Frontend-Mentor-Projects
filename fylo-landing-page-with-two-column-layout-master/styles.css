@@ -96,6 +96,16 @@ nav a{
 .upper-card p{
   margin-bottom: 1.5rem;
 }
+.form-control{
+  position: relative;
+}
+
+small{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
 
 form input, form button{
   width: 100%;
@@ -105,7 +115,7 @@ form input:focus{
   outline: none;
 }
 
-#email{
+#email,#email-bottom{
   padding: 0.8rem 1rem;
   font-size: 1rem;
   border: 1px solid var(--very-dark-blue);
@@ -126,6 +136,18 @@ form input:focus{
   border-radius: 4px;
   padding: 0.8rem 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.upper-error{
+  color: #e74c3c;
+}
+
+.form-control.upper.error #email{
+  border-color: #e74c3c;
+}
+
+.form-control.upper.error small{
+  visibility: visible;
 }
 
 #btn-submit:hover{
@@ -254,8 +276,9 @@ form input:focus{
   border-radius: 50%;
 }
 
-.early-access{
+/* Lower form */
 
+.early-access{
   padding: 2rem;
   text-align: center;
   color: #fff;
@@ -274,9 +297,18 @@ form input:focus{
   margin: auto;
   width: 80%;
 }
-.early-access #email{
+
+.early-access #email-bottom{
   border: none;
   font-size: 0.8rem;
+}
+
+.form-control.lower.error #email-bottom{
+  border: 1px solid #e74c3c;
+}
+
+.form-control.lower.error small{
+  visibility: visible;
 }
 
 .early-access #btn-submit{
