@@ -24,7 +24,7 @@ Users should be able to:
 
 
 ### Links
-- [Solution] (https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/product-preview-card-component-main))
+- [Solution] (https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/product-preview-card-component-main)
 - [Live] https://product-preview-card-vivarma.netlify.app/)
 
 ## Author
