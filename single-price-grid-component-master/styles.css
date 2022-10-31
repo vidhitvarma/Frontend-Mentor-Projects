@@ -154,7 +154,7 @@ footer a:hover{
 @media (min-width: 768px){
   .container{
     grid-template-columns: repeat(2,1fr);
-    max-width: 750px;
+    max-width: 700px;
   }
 
   .sub-containers{
@@ -164,7 +164,7 @@ footer a:hover{
 
   .community-header{
     grid-column: 1/ span 2;
-    padding-right: 4rem;
+    
   }
 
   .community-header h2{
