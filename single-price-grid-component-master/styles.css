@@ -145,7 +145,7 @@ footer a:hover{
 @media (min-width: 768px){
   .container{
     grid-template-columns: repeat(2,1fr);
-    max-width: 1000px;
+    max-width: 800px;
   }
 
   .sub-containers{
@@ -158,35 +158,35 @@ footer a:hover{
   }
 
   .community-header h2{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin-bottom: 1.8rem;
   }
 
   .community-header h4{
-    font-size: 1.65rem;
+    font-size: 1.4rem;
   }
 
   .community-header p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .monthly-subscription h3{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
   }
 
   .price{
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     margin-bottom: 1.8rem;
   }
 
   .per-month{
     margin-left: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .monthly-subscription p{
-    font-size: 1.4rem;
-    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
 
   .signup-btn{
@@ -198,12 +198,12 @@ footer a:hover{
   }
 
   .more-info h3{
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
   }
 
   .more-info li{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.75);;
   }
 }
