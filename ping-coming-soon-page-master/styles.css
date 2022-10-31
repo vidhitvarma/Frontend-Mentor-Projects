@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-
+/* Defaults */
 :root{
   --blue-primary : hsl(223, 87%, 63%);
   --pale-blue-sc : hsl(223, 100%, 88%);
@@ -26,10 +26,15 @@ img{
   width: 100%;
 }
 
-body{
+/* Body */
+
+html{
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 20px;
-  margin: 40px 0 0;
+  font-size: 1.25rem;
+}
+
+body{
+  margin: 1rem 0 0;
   /* overflow: hidden; */
 }
 
@@ -42,13 +47,15 @@ body{
   margin: auto;
 }
 
+/* Header */
+
 .image-container{
   max-width: 100px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .main-title{
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--gray);
   margin-bottom: 1.2rem;
 }
@@ -60,9 +67,11 @@ body{
 
 .sub{
   font-weight: 300;
-  font-size: 1rem;
-  margin-bottom: 2rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
 }
+
+/* Form validations */
 
 form{
   margin-bottom: 4rem;
@@ -75,9 +84,9 @@ label{
 
 .form input{
   font-family: inherit;
-  border-radius: 3rem;
+  border-radius: 2rem;
   width: 100%;
-  padding: 0.9rem 2rem;
+  padding: 0.75rem 2rem;
   border: 1px solid var(--blue-primary);
 }
 
@@ -94,26 +103,27 @@ label{
 small{
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   position: absolute;
   bottom: -36px;
   left: 0;
   color: var(--light-red-sc);
-  visibility: hidden;
+  display: none;
 }
 
 .btn-submit{
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-family: inherit;
   font-weight: 600;
   background-color: var(--blue-primary);
   width: 100%;
   display: block;
   color: #fff;
-  padding: 0.9rem 2rem;
+  padding: 0.75rem 2rem;
   text-align: center;
   border-radius: 3rem;
   border: none;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
 }
 
 .btn-submit:hover{
@@ -123,11 +133,11 @@ small{
 
 .email-checker.error input{
   border-color: var(--light-red-sc);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .email-checker.error small{
-  visibility: visible ;
+  display: block;
 }
 
 .email-checker.success input{
@@ -139,20 +149,20 @@ small{
   margin-bottom: 6rem;
 }
 
+.social-icons{
+  display: flex;
+}
+
 .social-icon{
   color: var(--blue-primary);
   border: 1px solid hsla(0, 0%, 59%,0.3);
   border-radius: 50%;
   margin: 0 0.5rem;
-  width: 40px;
-  height: 40px;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-icons{
-  display: flex;
 }
 
 .social-icon:hover{
@@ -163,15 +173,15 @@ small{
 .copyright{
   margin-top: 1.5rem;
   color: var(--gray);
-  font-size: 0.9rem;
-  margin-bottom: 4rem;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 /* Footer */
 
 footer{
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 
 .attribution{
@@ -189,10 +199,10 @@ footer{
 
 @media (min-width: 760px){
   .main-title{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .sub{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   form{
     width: 60%;
@@ -220,21 +230,22 @@ footer{
   .btn-submit{
     width: 25%;
     margin: 0 0 0 1rem;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
   }
 
   .main-img-container{
     width: 60%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .social-icon{
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
   }
 
   .copyright{
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
   }
 
 }
