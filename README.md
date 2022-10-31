@@ -16,6 +16,7 @@ This repository contains my personal solutions to the [Frontend Mentor](https://
 |Stats preview card component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/stats-preview-card-component-main)| [Live](https://stats-preview-card-vivarma.netlify.app/) | N|
 |3-column preview component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/3-column-preview-card-component-main)| [Live](https://3-column-preview-vivarma.netlify.app/) |N|
 |Profile card component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/profile-card-component-main)| [Live](https://profile-card-component-vivarma.netlify.app/)| N|
+|Single price grid component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-price-grid-component-master)| [Live](https://single-price-grid-vivarma.netlify.app/)| N|
 
 
 ### Junior
