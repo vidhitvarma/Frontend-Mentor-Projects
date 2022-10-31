@@ -17,6 +17,7 @@ This repository contains my personal solutions to the [Frontend Mentor](https://
 |3-column preview component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/3-column-preview-card-component-main)| [Live](https://3-column-preview-vivarma.netlify.app/) |N|
 |Profile card component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/profile-card-component-main)| [Live](https://profile-card-component-vivarma.netlify.app/)| N|
 |Single price grid component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-price-grid-component-master)| [Live](https://single-price-grid-vivarma.netlify.app/)| N|
-
+|Four card feature section | [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/four-card-feature-section-master)| [Link](https://four-card-feature-vivarma.netlify.app/)|N|
+|Ping coming soon page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/ping-coming-soon-page-master)|[Live](https://ping-single-coming-soon-vivarma.netlify.app/)| Y|
 
 ### Junior
