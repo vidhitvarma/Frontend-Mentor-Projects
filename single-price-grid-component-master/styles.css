@@ -21,26 +21,26 @@ li{
 
 body{
   font-family: 'Karla', sans-serif;
-  font-size: 16px;
   background-color: var(--light-gray);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .container{
-  margin: 50px 0;
-  width: 90%;
+  width: 86%;
   display: grid;
   grid-template-columns: 1fr;
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0.25rem;
   overflow: hidden;
-  
+  box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sub-containers{
-  padding: 25px;
+  padding: 1.25em;
   padding-bottom: 30px;
   color: #fff;
 }
@@ -50,17 +50,20 @@ body{
 }
 
 .community-header h2{
+  font-size: 1.35rem;
   color: var(--cyan);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .community-header h4{
   color: var(--bright-yellow);
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.0rem;
+  margin-bottom: 1.25rem;
+  padding-right: 1rem;
 }
 
 .community-header p{
+  font-size: 0.9rem;
   color: var(--grayish-blue);
   line-height: 1.6
 }
@@ -70,26 +73,30 @@ body{
 }
 
 .monthly-subscription h3{
-  font-size: 1.4rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.price{
+  display: flex;
+  align-items: center;
 }
 
 .monthly-subscription h1{
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .per-month{
   font-weight: 400;
   font-size: 0.9rem;
-  vertical-align: middle;
-  padding-bottom: 8px;
-  margin-left: 5px;
+  /*vertical-align: middle;
+  padding-bottom: 8px; */
+  margin-left: 0.5rem;
   color: rgba(255, 255, 255, 0.75);
 }
 
 .monthly-subscription p{
-  margin-bottom: 24px;
-  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .signup-btn{
@@ -97,11 +104,11 @@ body{
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 12px;
+  padding: 0.75rem;
   text-align: center;
   font-size: 1.2rem;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.1);
+  border-radius: 0.4rem;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
 }
 
 .more-info{
@@ -110,29 +117,93 @@ body{
 }
 
 .more-info h3{
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .more-info li{
   font-size: 0.95rem;
 }
 
+/* Footer */
+
+footer{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--cyan);
+  
+}
+
+footer a:hover{
+  color:rgba(19, 219, 216, 0.75);
+}
+
 @media (min-width: 768px){
   .container{
     grid-template-columns: repeat(2,1fr);
-    max-width: 800px;
-    margin-top: 160px;
+    max-width: 1000px;
   }
 
   .sub-containers{
-    padding: 50px;
+    padding: 3rem;
   }
 
   .community-header{
     grid-column: 1/ span 2;
+    padding: 3rem 6rem 3rem 3rem;
+  }
+
+  .community-header h2{
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .community-header h4{
+    font-size: 1.65rem;
   }
 
   .community-header p{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+  }
+
+  .monthly-subscription h3{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .price{
+    font-size: 2.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .per-month{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+  .monthly-subscription p{
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .signup-btn{
+    text-align: center;
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+
+  .more-info h3{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .more-info li{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.75);;
   }
 }
