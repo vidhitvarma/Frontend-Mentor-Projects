@@ -46,18 +46,21 @@ main{
 
 .left-container{
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0rem auto 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.left-container h1{
+.main-header{
+  padding: 0 1.8rem;
   line-height: 0.8;
-  margin: auto;
-  width: 60%;
   color: var(--very-dark-magenta);
   margin-bottom: 1.5rem;
 }
 
 .left-container p{
+  width: 90%;
   color: var(--dark-grayish-magenta);
   font-weight: 500;
   font-size: 1.1rem;
@@ -140,4 +143,113 @@ footer{
 
 .attribution a:hover{
   color: var(--soft-pink);
+}
+
+@media (min-width: 600px) and (max-width: 960px){
+
+  .left-container p{
+    margin: auto;
+    width: 60%;
+  }
+  .main-header{
+    font-size: 2.2rem;
+  }
+
+  .review{
+    margin: 1rem auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width: 32rem;
+  }
+
+  .star-container{
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .profile{
+    margin:2rem auto;
+    width: 32rem;
+  }
+}
+
+@media (min-width: 960px){
+  body{
+    margin: 3rem auto;
+  }
+
+  main{
+    max-width: 80rem;
+    margin-bottom: 8rem;
+  }
+  .upper-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .left-container{
+    padding-right:10rem ;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .main-header{
+    padding: 0;
+    font-size: 4rem;
+  }
+
+  .left-container p{
+    font-size: 1.2rem;
+  }
+
+  .right-container{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review{
+    flex-direction: row;
+    padding: 1rem;
+    width: 26rem;
+  }
+
+  .star-container{
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .review:nth-of-type(2){
+    align-self: center;
+  }
+
+  .review:nth-of-type(3){
+    align-self: flex-end;
+  }
+
+  .lower-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.5rem;
+  }
+
+  .profile{
+    padding: 2rem;
+    /* margin: 0 1rem; */
+  }
+
+  .profile:nth-of-type(2){
+    transform: translateY(1.5rem);
+  }
+
+  .profile:nth-of-type(3){
+    transform: translateY(3rem);
+  }
+
+  footer{
+    margin-top: 4rem;
+  }
+
 }
