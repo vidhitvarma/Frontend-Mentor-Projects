@@ -204,8 +204,11 @@ body{
 
   .social-links{
     justify-content: flex-end;
-    margin: 2rem;
+    margin: 0 2rem;
     align-self: flex-end;
+  }
+  .social-link{
+    margin: 0 0.6rem;
   }
 
   .attribution{
