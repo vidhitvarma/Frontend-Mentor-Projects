@@ -65,7 +65,7 @@ body{
   margin-bottom: 4rem;
 }
 
-.main h2{
+.main h1{
   margin-bottom: 1.5rem;
 }
 
@@ -93,6 +93,7 @@ body{
 .social-links{
   display: flex;
   justify-content: center;
+  margin: 2rem 0;
 }
 
 .social-link{
@@ -113,14 +114,15 @@ body{
 }
 
 .attribution{
+  font-size: 0.9rem;
   text-align: center;
 }
 .attribution a{
-  color: var(--soft-magenta);
+  color: #fff;
 }
 
 .attribution a:hover{
-  color: #fff;
+  color: var(--soft-magenta);
 }
 
 @media(min-width:600px) and (max-width:960px){
@@ -128,19 +130,23 @@ body{
   body{
     background: url(./images/bg-desktop.svg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--violet);
   }
   .body-img img{
     margin: auto;
   }
 
-  .main h2{
-    font-size: 2rem;
+  .main h1{
+    width: 80%;
+    margin: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .description{
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 80%;
   }
 
@@ -164,24 +170,30 @@ body{
     width: 14rem;
   }
   .body-img{
+    align-self: center;
     margin-bottom: 0rem;
+    width: 100%;
+  }
+
+  .body-img img{
+    width: 100%;
   }
 
   .main{
     margin: 3.2rem auto;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
 
   .text-container{
     text-align: start;
-    align-self: center;
-    padding: 2rem;
+    /* align-self: center; */
+    padding: 5rem 2.2rem;
   }
 
-  .text-container h2{
-    font-size: 2.5rem;
+  .text-container h1{
+    font-size: 2.2rem;
   }
 
   .btn-register{
@@ -194,6 +206,10 @@ body{
     justify-content: flex-end;
     margin: 2rem;
     align-self: flex-end;
+  }
+
+  .attribution{
+    font-size: 1.1rem;
   }
 
 }
