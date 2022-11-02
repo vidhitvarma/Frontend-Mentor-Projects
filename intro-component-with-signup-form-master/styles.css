@@ -189,9 +189,9 @@ footer{
   }
 
   main{
+    max-width: 75rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 1rem;
   }
   .intro{
     padding-left: 4rem;
@@ -209,10 +209,11 @@ footer{
   .intro p{
     font-size: 1rem;
     text-align: start;
-    padding-right: 5rem;
+    padding-right: 2rem;
   }
 
 .form-container{
-  flex-grow: 1;
+  max-width: 31.25rem;
+  justify-self: center;
 }
 }
