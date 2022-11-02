@@ -9,14 +9,18 @@
 </head>
 <body>
   <header>
-    <img src="./images/logo.svg" alt="Base Apparel" class="header-image">
+    <img src="./images/logo.svg" alt="Base Apparel" class="header-image mobile-header">
   </header>
   <main>
-    <div class="image-container">
-      <img src="./images/hero-desktop.jpg" alt="hero-desktop" class="desktop-img">
+    <article class="image-container">
       <img src="./images/hero-mobile.jpg" alt="" class="mobile-img">
-    </div>
-    <div class="text-container">
+      <img src="./images/hero-desktop.jpg" alt="hero-desktop" class="desktop-img">
+    </article>
+    <!-- Main container -->
+    <article class="text-container">
+      <div class="desktop-logo"> <!-- Display none for mobile-->
+        <img src="./images/logo.svg" alt="Base Apparel" class="header-image">
+      </div>
       <h1 class="big-header">
         <span class="highlight">We're </span>coming soon
       </h1>
@@ -33,8 +37,9 @@
           <img src="./images/icon-arrow.svg" alt="submit">
         </button>
       </form>
-    </div>
+    </article>
   </main>
+  <!-- footer -->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

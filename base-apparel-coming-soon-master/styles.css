@@ -35,37 +35,30 @@ html{
 /* Body */
 
 body{
-  max-width: 90rem;
+  max-width: 94rem;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   min-height: 100vh;
 }
 
-
-header{
-  padding: 2rem;
-}
-
-.header-image{
-  width: 7rem;
-}
-.desktop-img{
+.desktop-logo, .desktop-img{
   display: none;
 }
-.text-container{
-  margin: 4rem auto;
-  width: 86%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+
+.mobile-header{
+  
+  width: 12rem;
+  padding: 1rem 2rem;
 }
 
-.big-header{
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing:8px;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container{
+  padding: 1.6rem;
+  text-align: center;
 }
 
 .highlight{
@@ -73,19 +66,29 @@ header{
   color: var(--desaturated-red);
 }
 
-.text-container p{
-  color: var(--desaturated-red);
-  font-size: 0.9rem;
-  line-height: 1.4;
-  margin-bottom: 2rem;
+.big-header{
+  margin: 2rem auto;
+  letter-spacing: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 2.8rem;
 }
 
+.text-container p{
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--desaturated-red);
+}
+
+/* Form */
 .form{
   width: 100%;
   position: relative;
 }
 
 form input{
+  background-color: transparent;
   position: relative;
   width: 100%;
   font-size: 1.1rem;
@@ -127,6 +130,7 @@ small{
   border-color: #2ecc71 ;
 }
 
+/* Form button */
 .submit-btn{
   position: absolute;
   top: 0;
@@ -153,4 +157,89 @@ footer{
 }
 .attribution a:hover{
   color: var(--soft-red);
+}
+
+@media (min-width: 30rem) and (max-width: 48rem){
+  .image-container img{
+    width: 100%;
+  }
+
+  .text-container{
+    width: 80%;
+    margin: auto;
+  }
+
+  .big-header{
+    width: 50%;
+  }
+
+  .form{
+    margin: auto;
+    width: 80%;
+  }
+
+}
+
+@media(min-width: 48rem){
+
+  body{
+    margin: auto;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat center/cover;
+  }
+  .mobile-header{
+    display: none;
+  }
+
+  .mobile-img{
+    display: none;
+  }
+
+  .desktop-img,.desktop-logo{
+    display: block;
+  }
+
+  .desktop-img{
+    height: 100%;
+  }
+
+  main{
+    margin-bottom: 2rem;
+    min-height: 94vh;
+    flex-direction: row-reverse;
+  }
+
+  .desktop-logo{
+    margin: 5rem 0 8rem ;
+  }
+  .desktop-logo img{
+    width: 15rem;
+  }
+  .text-container{
+    text-align: start;
+  }
+
+  .big-header{
+    margin: 3rem 0;
+    font-size:4rem;
+    width: 50%;
+  }
+
+  .text-container p{
+    width: 50%;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+  }
+
+  .form{
+    width: 60%;
+  }
+
+  .submit-btn{
+    padding: 0.9rem 3rem;
+  }
+
+  .exclamation-icon{
+    right: 7rem;
+  }
 }
