@@ -177,6 +177,19 @@ footer{
   color: #fff;
 }
 
+@media(min-width: 36rem) and (max-width: 48rem){
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main{
+    max-width: 31rem;
+  }
+}
+
 @media(min-width: 48rem){
   body{
     background: url(./images/bg-intro-desktop.png) ;
@@ -189,7 +202,6 @@ footer{
   }
 
   main{
-    max-width: 75rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
@@ -200,20 +212,25 @@ footer{
     justify-content: flex-start;
   }
   .intro h1{
-    margin-bottom: 1.2rem;
+    margin-bottom: 2rem;
     line-height: 1;
     padding: 0;
     text-align: start;
-    font-size: 3.2rem;
+    font-size: 3.4rem;
   }
   .intro p{
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: start;
     padding-right: 2rem;
   }
 
 .form-container{
-  max-width: 31.25rem;
+  width: 90%;
+  max-width: 36rem;
   justify-self: center;
-}
+  }
+
+  footer{
+    margin-top: 3rem;
+  }
 }
