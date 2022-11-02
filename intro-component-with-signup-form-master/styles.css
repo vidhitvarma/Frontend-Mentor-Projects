@@ -86,12 +86,13 @@ body{
 
 .form-control{
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .form-control input{
+  font-weight: 700;
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 0.3rem;
   border: 1px solid var(--grayish-blue);
 }
@@ -113,8 +114,9 @@ small{
   color: var(--red);
   position: absolute;
   right: 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   visibility: hidden;
+  font-style: italic;
 }
 
 .btn-submit{
@@ -126,7 +128,7 @@ small{
   border: none;
   text-transform: uppercase;
   padding: 0.8rem;
-  box-shadow: 0 4px 1px rgba(0,80,0,0.25);
+  box-shadow: 0 4px 2px var(--grayish-blue);
   margin-bottom: 0.8rem;
 }
 .btn-submit:hover{
@@ -149,6 +151,7 @@ small{
 
 .form-control.error #email::placeholder{
   color: var(--red);
+  opacity: 90%;
 }
 
 .form-control.error input{
@@ -161,6 +164,10 @@ small{
 
 .form-control.error small{
   visibility: visible;
+}
+
+.form-control.success input{
+  border-color: var(--green);
 }
 
 /* Footer */
@@ -192,6 +199,7 @@ footer{
 
 @media(min-width: 48rem){
   body{
+    margin-bottom: 0;
     background: url(./images/bg-intro-desktop.png) ;
     background-color: var(--red);
     min-height: 94vh;
@@ -230,7 +238,27 @@ footer{
   justify-self: center;
   }
 
+  .form input,
+  .btn-submit{
+    display: block;
+    margin: auto;
+    width: 95%;
+  }
+
+  small{
+    right: 0.9rem;
+  }
+
   footer{
     margin-top: 3rem;
+    position: absolute;
+    bottom: 0.5rem;
+  }
+
+  .btn-submit{
+    margin-bottom: 1rem;
+  }
+  .terms{
+    margin-bottom: 0.8rem;
   }
 }
