@@ -8,43 +8,49 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <div class="container">
-    <div class="overview-text">
+  <main>
+    <article class="intro">
       <h1>Learn to code by watching others</h1>
       <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-        but understanding how developers think is invaluable.</p>
-    </div>
-    <div class="form-component">
-      <p class="trial"><span class="highlight">Try it free 7 days</span> then $20/mo. thereafter</p>
-      <form action="" class="form">
+        but understanding how developers think is invaluable. 
+      </p>
+    </article>
+    <article class="form-container">
+      <p class="trial">
+        <span class="highlight">Try it free 7 days</span> then $20/mo. thereafter
+      </p>
+      <form class="form" id="form">
         <div class="form-control">
-          <label for="first-name">
-            <input type="text" name="first-name" id="first-name" placeholder="First Name">
-          </label>
+          <input type="text" name="first-name" id="first-name" placeholder="First Name">
+          <img src="./images/icon-error.svg" alt="" class="exclaim">
+          <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="last-name">
-            <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-          </label>
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+          <img src="./images/icon-error.svg" alt="" class="exclaim">
+          <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="email">
-            <input type="text" name="email" id="email" placeholder="Email Address">
-          </label>
+          <input type="text" name="email" id="email" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="" class="exclaim">
+          <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="first-name">
-            <input type="password" name="password" id="password" placeholder="Password">
-          </label>
+          <input type="password" name="password" id="password" placeholder="Password">
+          <img src="./images/icon-error.svg" alt="" class="exclaim">
+          <small>Error message</small>
         </div>
-        <input type="button" value="Claim your free trial" class="sub-btn"/>
-        <p class="terms">By clicking the button, you are agreeing to our <a href="" class="tnc-link">Terms and Services</a></p>
+        <button class="btn-submit">Claim your free trial</button>
+        <p class="terms">By clicking the button, you are agreeing to our <span class="highlight">Terms and Services</span></p>
       </form>
-      <!-- End of form tag -->
-    </div>
-
-    <!-- End of container -->
-  </div>
+    </article>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+    </p>
+</footer>
   <!-- Script tag -->
   <script src="./app.js"></script>
 </body>
