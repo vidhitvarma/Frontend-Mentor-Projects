@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges - Solutions Repository
 
-This repository contains my personal solutions to the [Frontend Mentor](https://www.frontendmentor.io/) free challenges section.
+This repository contains my personal solutions to the [Frontend Mentor](https://www.frontendmentor.io/) challenges section.
 
 ## Difficulty
 - [Newbie ](#newbie)
@@ -21,6 +21,8 @@ No.|  Name  |  Code  | Live |  JS  |
 |10|Single price grid component| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-price-grid-component-master)| [Live](https://single-price-grid-vivarma.netlify.app/)| N|
 |11|Huddle landing page with a single introductory section| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/huddle-landing-page-with-single-introductory-section-master)|[Live](https://huddle-single-intro-vivarma.netlify.app/)|N|
 |12|Ping coming soon page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/ping-coming-soon-page-master)|[Live](https://ping-single-coming-soon-vivarma.netlify.app/)| Y|
+|13| Base apparel coming soon|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/base-apparel-coming-soon-master)|[Live](https://base-apparel-vivarma.netlify.app/)|Y|
+|14|Intro component with sign-up form|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/intro-component-with-signup-form-master)|[Live](https://intro-component-form-vivarma.netlify.app/)|Y|
 
 ### Junior
 |No.|  Name  |  Code  | Live |  JS  |
