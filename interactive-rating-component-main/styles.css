@@ -202,4 +202,8 @@ footer a:hover{
     width: 3.5rem;
     height: 3.5rem;
   }
+
+  .btn-submit{
+    margin-top: 2.5rem;
+  }
 }
