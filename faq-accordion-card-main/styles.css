@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+  --very-dark-desat-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14,88%,65%);
+
+  /* Gradients */
+  --soft-violet: hsl(273,75%, 66%);
+  --soft-blue : hsl(240, 73%, 65%);
+
+  /* Neutral */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --dividers: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+  margin: 4rem 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--soft-violet),var(--soft-blue));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.917rem;
+  padding: 4rem 2rem;
+  box-shadow: 0px 50px 50px -20px #35127A7B;
+}
+
+.img-container{
+  position: absolute;
+  margin-top: -13rem;
+}
+
+.background-img{
+  margin-top: -33%;
+}
+
+.faq{
+  font-size: 2.667rem;
+  margin: 7rem 0 3.2rem;
+}
+
+.data-container{
+  width: 100%;
+  border-bottom: 1px solid var(--dividers);
+  
+}
+
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25rem 0 ;
+}
+
+.header{
+  font-size: 1.15rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.header:hover{
+  color: var(--soft-red);
+  cursor: pointer;
+}
+
+.question img{
+  width: 0.9rem;
+  height: 0.6rem;
+}
+
+.answer{
+  color: var(--dark-grayish-blue);
+  padding-right: 1.6rem;
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+}
+
+.desktop-img,.box-img,.bg-desktop{
+  display: none;
+}
+
+/* Footer */
+footer{
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--very-dark-desat-blue);
+}
+
+footer a:hover{
+  color: var(--soft-red)
+}
+
+/* Js changes */
+
+.hidden{
+  display: none;
+}
+
+.header.highlight{
+  font-weight: 700;
+}
+
