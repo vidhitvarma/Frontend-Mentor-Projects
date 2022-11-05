@@ -19,6 +19,7 @@ body{
   font-size: 18px;
   background-color: var(--dark-cyan);
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -39,21 +40,28 @@ body{
 
 .container{
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 1rem;
   overflow: hidden;
   z-index: 2;
+  width: 90%;
+  max-width: 360px;
+}
+
+.background-img img{
+  width: 100%;
+  display: block;
 }
 
 .profile{
   margin: auto;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   margin-top: -55px;
 }
 
 .profile img{
   border-radius: 50%;
-  border: 8px solid #fff;
+  border: 6px solid #fff;
 }
 
 .profile span{
@@ -63,12 +71,12 @@ body{
 }
 
 .profile h4{
-  margin: 10px ;
+  margin: 0.625rem ;
 }
 
 .profile p{
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.833rem;
   color: var(--dark-gray);
 }
 
@@ -79,16 +87,35 @@ body{
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 30px ;
+  padding: 1.7rem ;
   border-top: 1px solid var(--dark-gray);
 }
-
-
 
 .data{
   display: block;
   color:var(--dark-gray);
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.8rem;
   letter-spacing: 1px;
+}
+
+/* Attribution links */
+footer{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.attribution a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.attribution a:hover{
+  color: darkslateblue;
+}
+
+@media (min-width: 768px){
+  .container{
+    width: 360px;
+  }
 }
