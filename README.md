@@ -23,6 +23,9 @@ No.|  Name  |  Code  | Live |  JS  |
 |12|Ping coming soon page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/ping-coming-soon-page-master)|[Live](https://ping-single-coming-soon-vivarma.netlify.app/)| Y|
 |13| Base apparel coming soon|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/base-apparel-coming-soon-master)|[Live](https://base-apparel-vivarma.netlify.app/)|Y|
 |14|Intro component with sign-up form|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/intro-component-with-signup-form-master)|[Live](https://intro-component-form-vivarma.netlify.app/)|Y|
+|15|FAQ accordion card|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/faq-accordion-card-main)|[Live](https://faq-accordion-vivarma.netlify.app/)|Y|
+|16|Article preview component|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/article-preview-component-master)|[Live](https://article-preview-component-vivarma.netlify.app/)|Y|
+|17|Interactive rating Component|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/interactive-rating-component-main)|[Live](https://interactive-rating-vivarma.netlify.app/)|Y|
 
 ### Junior
 |No.|  Name  |  Code  | Live |  JS  |
