@@ -1,11 +1,10 @@
-const shares = document.querySelectorAll('.share');
-const profileContainer = document.getElementById('profile-container');
-const shareContainer = document.getElementById('share-container');
+const share = document.querySelector('.share');
+const sharedContainer = document.getElementById('share-container');
+const bottomContainer = document.getElementById('bottom-container');
 
 
-shares.forEach(function(share){
-  share.addEventListener('click',function(e){
-    profileContainer.classList.toggle('hidden');
-    shareContainer.classList.toggle('hidden');
-  })
+share.addEventListener('click', ()=>{
+  share.classList.toggle('invert');
+  bottomContainer.classList.toggle('invertBg');
+  sharedContainer.classList.toggle('hide');
 })
