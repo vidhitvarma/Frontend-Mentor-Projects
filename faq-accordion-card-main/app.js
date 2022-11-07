@@ -1,4 +1,4 @@
-const questions = document.querySelectorAll('#header');
+const questions = document.querySelectorAll('.header');
 
 
 questions.forEach(function(question){
