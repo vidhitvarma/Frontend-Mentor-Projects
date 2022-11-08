@@ -35,7 +35,7 @@ html{
 /* Body */
 
 body{
-  max-width: 94rem;
+  max-width: 90rem;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   min-height: 100vh;
 }
@@ -95,6 +95,7 @@ form input{
   border: 1px solid var(--desaturated-red);
   border-radius: 1.5rem;
   padding: 0.75rem 1.5rem;
+  outline: none;
 }
 
 ::placeholder{
@@ -208,6 +209,10 @@ footer{
     flex-direction: row-reverse;
   }
 
+  .image-container{
+    width: 90%;
+  }
+
   .desktop-logo{
     margin: 5rem 0 8rem ;
   }
@@ -215,28 +220,29 @@ footer{
     width: 15rem;
   }
   .text-container{
+    padding-left: 10rem;
     text-align: start;
   }
 
   .big-header{
-    margin: 3rem 0;
+    margin: 3rem 0 1rem;
     font-size:4rem;
     width: 50%;
   }
 
   .text-container p{
-    width: 50%;
+    width: 80%;
     line-height: 1.8;
     font-size: 1.1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .form{
-    width: 60%;
+    width: 80%;
   }
 
   .submit-btn{
-    padding: 0.9rem 3rem;
+    padding: 0.8rem 3rem;
   }
 
   .exclamation-icon{
