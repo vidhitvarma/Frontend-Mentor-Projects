@@ -31,3 +31,4 @@ No.|  Name  |  Code  | Live |  JS  |
 |No.|  Name  |  Code  | Live |  JS  |
 | --- | --- | --- | ---|---|
 |1|Testimonials grid section|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/testimonials-grid-section-main)|[Live](https://testimonials-grid-vivarma.netlify.app/)|N|
+|2|Huddle landing page with alternating feature blocks|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)|[Live](https://huddle-landing-page-alt-vivarma.netlify.app/)|N|
