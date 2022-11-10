@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root{
+  --blue : #66E2DC;
+  --soft-red : #FA7453;
+  --soft-yellow : #FFB964;
+  --off-white : #FCFAF9;
+  --dark-blue : #191826;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+html{
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
