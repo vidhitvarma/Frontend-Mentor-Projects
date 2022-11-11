@@ -19,6 +19,10 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 input, button, textarea, select {
   font: inherit;
 }
@@ -26,4 +30,174 @@ input, button, textarea, select {
 html{
   font-size: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+  background: url(./assets/bg-main-mobile.png) no-repeat;
+  background-position: top -16rem left -10%;
+  margin-top: 2.5rem;
+}
+
+/* Header Style */
+.header-title,.footer-title{
+  color: var(--dark-blue);
+  padding: 0 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Upper info */
+
+.information{
+  color: var(--dark-blue);
+  padding: 0 1.5rem;
+  margin-bottom: 10.375rem;
+}
+
+.information h1{
+  font-size: 2.5rem;
+}
+
+.description{
+  line-height: 1.625;
+}
+
+.information p{  
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* Illustration tab */
+
+.main-background{
+  background-color: var(--dark-blue);
+  background-image: url(./assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile{
+  width: 13rem;
+  margin-top: -6rem;
+}
+
+.premium-pricing{
+  margin-top: 4rem;
+  border-radius: 0.75rem;
+  color: var(--off-white);
+  background-color: var(--soft-red);
+  padding: 3rem 2.25rem;
+}
+
+.premium-header{
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.premium-para{
+  font-size: 1.125rem;
+  margin-bottom: 2.25rem;
+}
+
+.price-container{
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4.0625rem;
+}
+
+.price-container span{
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+button{
+  font-weight: 700;
+  border: none;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.5rem;
+  height: 3.8125rem;
+  
+}
+
+button img{
+  margin-right: 0.5rem;
+}
+
+.ios-button{
+  background-color: var(--dark-blue);
+  color: var(--off-white);
+  margin-bottom: 1rem;
+}
+
+.ios-button:is(:hover,:active){
+  background-color: var(--blue);
+}
+
+.android-button{
+  background-color: var(--off-white);
+}
+
+.android-button:is(:hover,:active){
+  background-color: var(--soft-yellow);
+}
+
+/* Footer */
+footer{
+  padding: 0 1.5rem;
+  margin: 4rem auto;
+  color: var(--dark-blue);
+}
+
+.footer-data{
+  margin-bottom: 4rem;
+  line-height: 1.6;
+}
+
+.footer-title{
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+
+.footer-data .email{
+  display: block;
+  font-weight: 700;
+}
+
+.social-links{
+  display: flex;
+}
+
+.social-link{
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.social-link:hover{
+  color: var(--soft-red);
+}
+
+.attribution{
+  text-align: center;
+}
+
+.attribution a{
+  color: var(--soft-red);
+}
+
+.attribution a:hover{
+  color: var(--soft-yellow);
 }
