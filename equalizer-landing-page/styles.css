@@ -35,13 +35,16 @@ html{
 body{
   background: url(./assets/bg-main-mobile.png) no-repeat;
   background-position: top -16rem left -10%;
-  margin-top: 2.5rem;
 }
 
 /* Header Style */
-.header-title,.footer-title{
+
+header{
+  padding: 2.5rem 1.5rem 0;
+}
+
+.title{
   color: var(--dark-blue);
-  padding: 0 1.5rem;
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -51,7 +54,6 @@ body{
 
 .information{
   color: var(--dark-blue);
-  padding: 0 1.5rem;
   margin-bottom: 10.375rem;
 }
 
@@ -83,7 +85,7 @@ body{
 
 .mobile{
   width: 13rem;
-  margin-top: -6rem;
+  margin-top: -7rem;
 }
 
 .premium-pricing{
@@ -120,13 +122,13 @@ body{
 }
 
 button{
+  width: 100%;
   font-weight: 700;
   border: none;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 18.5rem;
   height: 3.8125rem;
   
 }
@@ -167,7 +169,6 @@ footer{
 
 .footer-title{
   margin-bottom: 2rem;
-  padding: 0;
 }
 
 
@@ -192,6 +193,7 @@ footer{
 
 .attribution{
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .attribution a{
@@ -201,3 +203,4 @@ footer{
 .attribution a:hover{
   color: var(--soft-yellow);
 }
+

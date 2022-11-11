@@ -1,0 +1,72 @@
+/* Tablet sizing*/
+@media (min-width: 23.5rem) and (max-width:48rem){
+  body{
+    background-image: url(./assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top -16rem right -10rem;
+  }
+
+  header,footer{
+    padding: 0 2rem;
+  }
+
+  header{
+    padding-top: 4rem;
+    background-image: url(./assets/bg-pattern-1.svg);
+
+    background-repeat: no-repeat;
+    background-position: top -3rem right -3rem;
+  }
+
+  .information{
+    max-width: 32.5rem;
+  }
+
+  .information h1{
+    font-size: 4rem;
+  }
+
+  .information p{
+    font-size: 1.125rem;
+  }
+
+  main{
+    padding: 0 2.2rem;
+  }
+  .main-background{
+    padding: 0 4rem;
+  }
+
+  .mobile{
+    align-self: flex-start;
+  }
+
+  .premium-pricing{
+    margin-right: 1.8rem;
+    margin-top: -13rem;
+    margin-bottom: -6rem;
+    width: 25rem;
+    align-self: flex-end;
+  }
+
+  footer{
+    margin-top: 11.375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-data{
+    width: 23rem;
+    margin-bottom: 0;
+  }
+
+  .footer-data .email{
+    display: inline;
+  }
+
+  .social-links{
+    justify-content: flex-end;
+    align-self: flex-end;
+  }
+}
+
