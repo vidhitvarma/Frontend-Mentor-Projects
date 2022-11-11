@@ -75,7 +75,7 @@
   body{
     background-image: url(./assets/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-position: top -18rem right -8rem;
+    background-position: top -18rem right 2rem;
   }
 
   header,footer, main{
