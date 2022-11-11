@@ -13,7 +13,6 @@
   header{
     padding-top: 4rem;
     background-image: url(./assets/bg-pattern-1.svg);
-
     background-repeat: no-repeat;
     background-position: top -3rem right -3rem;
   }
@@ -38,12 +37,13 @@
   }
 
   .mobile{
+    width: 16.875rem;
     align-self: flex-start;
   }
 
   .premium-pricing{
-    margin-right: 1.8rem;
-    margin-top: -13rem;
+    margin-right: -0.75rem;
+    margin-top: -16rem;
     margin-bottom: -6rem;
     width: 25rem;
     align-self: flex-end;
@@ -65,8 +65,97 @@
   }
 
   .social-links{
-    justify-content: flex-end;
     align-self: flex-end;
   }
 }
 
+
+/* Desktop */
+@media (min-width: 48.0625rem){
+  body{
+    background-image: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top -18rem right -8rem;
+  }
+
+  header,footer, main{
+    padding: 3.875rem 10.375rem;
+  }
+
+  header{
+    padding-top: 4rem;
+    background-image: url(./assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position: top -2.5rem right 0rem;
+  }
+
+  .title{
+    margin-bottom: 7.9rem;
+  }
+
+
+  .information{
+    margin-bottom: 16rem;
+  }
+
+  .information h1{
+    font-size: 5.5rem;
+  }
+
+  .description{
+    line-height: 2.125rem;
+  }
+
+  .information p{
+    width: 51.5625rem;
+    font-size: 1.25rem;
+  }
+
+  .main-background{
+    background-position: top 1rem left 42%;
+    padding: 0 6.375rem;
+  }
+
+  .mobile{
+    align-self: flex-start;
+    width: 19.5rem;
+    margin-top: -15rem;
+  }
+
+  .premium-pricing{
+    padding: 3.5rem;
+    width: 27.875rem;
+    align-self: flex-end;
+    margin-top: -16rem;
+    margin-bottom: -8rem;
+  }
+
+  .premium-header{
+    font-size: 2.5rem;
+  }
+  .premium-para{
+    font-size: 1.25rem;
+  }
+  
+
+  footer{
+    margin-top: 6.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-data{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .footer-text{
+    width: 22.875rem;
+  }
+
+  .footer-data .email{
+    display: inline;
+  }
+}
