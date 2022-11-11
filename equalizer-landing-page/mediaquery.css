@@ -1,5 +1,5 @@
 /* Tablet sizing*/
-@media (min-width: 23.5rem) and (max-width:48rem){
+@media (min-width: 26.625rem) and (max-width:48rem){
   body{
     background-image: url(./assets/bg-main-tablet.png);
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@
   }
 
   .information p{
-    width: 51.5625rem;
+    max-width: 51.5625rem;
     font-size: 1.25rem;
   }
 
@@ -144,6 +144,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  footer .title{
+    margin-right: 1rem;
+  }
+  
   .footer-data{
     width: 60%;
     display: flex;
