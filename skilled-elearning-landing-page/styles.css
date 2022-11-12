@@ -37,7 +37,10 @@ html{
 }
 
 body{
-  padding: 1rem 0;
+  background: linear-gradient(#fff,#f0f1ff);
+  padding-top: 1rem;
+  /* max-width: 90rem; */
+  margin: auto;
 }
 
 header,main{
@@ -91,6 +94,10 @@ header .logo, footer .logo{
   color: #fff;
   border: none;
   background:linear-gradient(to bottom, var(--button-main-top), var(--button-main-bottom));
+}
+
+.tablet-hero, .desktop-hero{
+  display: none;
 }
 
 .text-data button:hover{
@@ -155,6 +162,8 @@ header .logo, footer .logo{
 footer{
   padding: 2.25rem 1rem;
   background-color: var(--dark-blue);
+}
+.main-footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,4 +175,160 @@ footer .start{
 
 footer .start:hover{
   background:linear-gradient(to bottom,#8e94ff, #ff77cd);
+}
+
+.attribution{
+  text-align: center;
+  font-size: 1rem;
+  background-color: #13183F;
+  color: #fff;
+}
+
+.attribution a{
+  color: #F02AA6;
+}
+
+.attribution a:hover{
+  color: #FF6F48;
+}
+
+/* Tablet media query */
+@media (min-width : 26.625rem) and (max-width:48rem){
+
+  body{
+    padding-top: 1.5rem;
+  }
+
+  header,main{
+    padding: 0 2.5rem;
+  }
+
+  nav button{
+    z-index: 2;
+  }
+
+  .information{
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-hero,.desktop-hero{
+    display: none;
+  }
+
+  .tablet-hero{
+    display: block;
+  }
+
+  .human-image{
+    margin-top: -12rem;
+    margin-right: -19rem;
+  }
+
+  .main-body{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0.75rem;
+    row-gap: 3.5rem;
+  }
+
+  .color-card{
+    padding-top: 3.5rem;
+  }
+
+  footer{
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+
+/* Pc Sizes */
+
+@media(min-width: 48.0625rem){
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav{
+    width: 100%;
+    max-width: 69.375rem;
+  }
+
+  nav button{
+    z-index: 2;
+  }
+
+  .information{
+    max-width: 69.375rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-data h1{
+    font-size: 3.5rem;
+  }
+
+  .text-data p{
+    width: 27.8125rem;
+    font-size: 1.125rem;
+  }
+
+  .text-data button{
+    font-size: 1.125rem;
+    height: 4rem;
+  }
+
+  .human-image{
+    margin-right: -32rem;
+    margin-top: -16rem;
+  }
+
+  .tablet-hero,.mobile-hero{
+    display: none;
+  }
+
+  .desktop-hero{
+    display: block;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-body{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.75rem;
+    row-gap: 5rem;
+    max-width: 69.375rem;
+  }
+
+  .card-container{
+    gap: 1.5rem;
+  }
+
+  .card-title{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .learn-more{
+    font-size: 1.125rem;
+  }
+
+  .card-text{
+    font-size: 1.125rem;
+  }
+
+  .color-card{
+    font-size: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .main-footer{
+    margin: auto;
+    max-width: 69.375rem;
+  }
 }
