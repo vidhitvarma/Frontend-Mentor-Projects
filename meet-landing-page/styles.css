@@ -68,6 +68,7 @@ header{
 .introduction{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3.5rem;
   margin-bottom: 4rem;
 }
@@ -86,6 +87,13 @@ header{
   gap: 1.5rem;
 }
 
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .intro-text h1{
   padding: 0 2rem;
   color: var(--dark-gray);
@@ -94,6 +102,7 @@ header{
 }
 
 .intro-text p{
+  line-height: 1.625;
   text-align: center;
   color: var(--light-gray);
 }
@@ -118,6 +127,7 @@ header{
 
 .version{
   color: var(--bright-blue);
+  margin-left: 0.25rem;
 }
 
 .more-info{
@@ -184,7 +194,6 @@ footer button:hover{
 
 .information{
   margin: 4rem 0 11rem;
-  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,8 +202,7 @@ footer button:hover{
   text-align: center;
 }
 
-.blue-highlight{
-  font-size: 1rem;
+.information .blue-highlight{
   font-weight: 800;
   color: var(--dark-blue);
   text-transform: uppercase;
@@ -208,7 +216,6 @@ footer button:hover{
 }
 
 .information p{
-  font-size: 1.05rem;
   font-weight: 500;
   line-height: 1.625rem;
 }
@@ -223,8 +230,7 @@ footer{
   gap: 2rem;
   padding: 3.5rem 2.3rem;
   color: var(--off-white);
-  background: linear-gradient(#4d97a9d3,#4d96a9d3),url(./assets/mobile/image-footer.jpg);
-  background-size: cover;
+  background: linear-gradient(#4d97a9d3,#4d96a9d3),url(./assets/mobile/image-footer.jpg) no-repeat center center/cover;
 }
 
 footer .designer-box{
@@ -242,4 +248,49 @@ footer button{
 
 footer span{
   color: #D9B8FF;
+}
+
+/* Tablet changes */
+@media (min-width: 26.9375rem) and (max-width:48rem){
+
+  .people{
+    margin-left: 0;
+    width: 106%;
+  }
+  .intro-text{
+    width: 28.5625rem;
+  }
+
+  .intro-text h1{
+    font-size: 3rem;
+  }
+
+  .buttons-container{
+    flex-direction: row;
+  }
+
+  .image-container{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .information{
+    gap: 2rem;
+    width: 35.8125rem;
+    margin-bottom: 5rem;
+  }
+
+  .information h1{
+    width: 28rem;
+    font-size: 2.5rem;
+  }
+
+  footer{
+    padding: 4rem 6rem;
+    background: linear-gradient(#4d97a9d3,#4d96a9d3),url(./assets/tablet/image-footer.jpg) no-repeat center center/cover;
+  }
+
+  footer h1{
+    font-size: 2.5rem;
+    width: 28.5625rem;
+  }
 }
