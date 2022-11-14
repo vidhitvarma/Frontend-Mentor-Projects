@@ -79,6 +79,10 @@ header{
   max-width: 150%;
 }
 
+.desktop-image{
+  display: none;
+}
+
 .intro-text{
   padding: 0 1.5rem;
   display: flex;
@@ -189,10 +193,11 @@ footer button:hover{
 .single-image{
   width: 9.4375rem;
   height: 8.9375rem;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
 }
 
 .information{
+  max-width: 35.8125rem;
   margin: 4rem 0 11rem;
   display: flex;
   flex-direction: column;
@@ -210,6 +215,7 @@ footer button:hover{
 }
 
 .information h1{
+  max-width: 28rem;
   font-weight: 800;
   font-size: 2rem;
   color: var(--dark-gray);
@@ -226,8 +232,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 2rem;
+  justify-content: center;
   padding: 3.5rem 2.3rem;
   color: var(--off-white);
   background: linear-gradient(#4d97a9d3,#4d96a9d3),url(./assets/mobile/image-footer.jpg) no-repeat center center/cover;
@@ -235,6 +240,14 @@ footer{
 
 footer .designer-box{
   margin-top: -10.5rem;
+}
+
+.display-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
 footer p{
@@ -249,6 +262,26 @@ footer button{
 footer span{
   color: #D9B8FF;
 }
+
+
+/* attribution */
+
+.attribution{
+  text-align: center;
+  font-size: 1.05rem;
+  background-color: #4d97a9d3;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.attribution a{
+  color: #855fb1;
+}
+
+.attribution a:hover{
+  color: #28283d;
+}
+
 
 /* Tablet changes */
 @media (min-width: 26.9375rem) and (max-width:48rem){
@@ -273,14 +306,17 @@ footer span{
     grid-template-columns:repeat(4,1fr);
   }
 
+  .single-image{
+    width: 10.25rem;
+    height: 9.75rem;
+  }
+
   .information{
     gap: 2rem;
-    width: 35.8125rem;
     margin-bottom: 5rem;
   }
 
   .information h1{
-    width: 28rem;
     font-size: 2.5rem;
   }
 
@@ -292,5 +328,116 @@ footer span{
   footer h1{
     font-size: 2.5rem;
     width: 28.5625rem;
+  }
+}
+
+@media(min-width:48.0625rem){
+
+  header,main{
+    max-width: 90rem;
+    margin: auto;
+  }
+
+  header{
+    margin-bottom: 3.375rem;
+  }
+
+  .mobile-image{
+    display: none;
+  }
+
+  .desktop-image{
+    display: block;
+  }
+
+  .introduction{
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    height: 21rem;
+  }
+
+  .person-left,
+  .person-right{
+    min-width: 16rem;
+  }
+
+  .person-left{
+    align-self: flex-start;
+  }
+
+  .person-right{
+    align-self: flex-end;
+  }
+  
+  .people{
+    display: none;
+  }
+
+
+  .intro-text{
+    align-self: center;
+    max-width: 33.75rem;
+    gap: 2.125rem;
+  }
+
+  .intro-text h1{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .buttons-container{
+    flex-direction: row;
+  }
+
+  .image-container{
+    grid-template-columns:repeat(4,1fr);
+    gap: 1.875rem;
+    max-width: 69.375rem;
+  }
+
+  .single-image{
+    width: 15.9375rem;
+    height: 15.125rem;
+  }
+
+  .information{
+    width: 33.75rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .information h1{
+    font-size: 2.5rem;
+  }
+
+  .information p{
+    font-size: 1.125rem;
+  }
+
+  footer{
+    height: 19.25rem;
+    background: linear-gradient(#4d97a9d3,#4d96a9d3),url(./assets/desktop/image-footer.jpg) no-repeat center center/cover;
+  }
+
+  .display-content{
+    margin: auto;
+    flex-direction: row;
+    max-width: 69.375rem;
+    gap: 2rem;
+  }
+
+  footer h1{
+    max-width: 21.875rem;
+    text-align: start;
+    font-size: 2.5rem;
+  }
+
+  footer p{
+    max-width: 21.875rem;
+    text-align: start;
+  }
+
+  footer button{
+    width: 12.0625rem;
   }
 }

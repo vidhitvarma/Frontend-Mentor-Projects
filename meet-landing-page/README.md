@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 - [Solution] (https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/meet-landing-page)
-- [Live] (https://skilled-elearning-app-vivarma.netlify.app/)
+- [Live] (https://meet-landing-page-vivarma.netlify.app/)
 
 ## Author
 - Github - [Vidhit Varma] (https://github.com/vidhitvarma)
