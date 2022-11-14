@@ -74,6 +74,10 @@ header .logo, footer .logo{
   background-color: var(--desat-grayish-blue);
 }
 
+.text-data{
+  gap: 1.5rem;
+}
+
 .text-data h1{
   color: var(--dark-blue);
   font-size: 2.5rem;
@@ -194,7 +198,7 @@ footer .start:hover{
 }
 
 /* Tablet media query */
-@media (min-width : 26.625rem) and (max-width:48rem){
+@media (min-width : 26.75rem) and (max-width:48rem){
 
   body{
     padding-top: 1.5rem;
@@ -245,6 +249,9 @@ footer .start:hover{
 /* Pc Sizes */
 
 @media(min-width: 48.0625rem){
+  body{
+    overflow-x: hidden;
+  }
   header{
     display: flex;
     flex-direction: column;
@@ -278,6 +285,7 @@ footer .start:hover{
   .text-data button{
     font-size: 1.125rem;
     height: 4rem;
+    margin-top: 0.5rem;
   }
 
   .human-image{
