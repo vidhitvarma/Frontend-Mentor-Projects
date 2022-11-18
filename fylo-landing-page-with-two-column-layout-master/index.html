@@ -9,146 +9,139 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title> 
 </head>
 <body>
-<header class="container">
-  <div class="logo-container">
-    <img src="./images/logo.svg" alt="Fylo">
-  </div>
-  <nav>
-    <ul class="headers-nav">
-      <li class="nav-links">
-        <a href="">Features</a>
-      </li>
-      <li class="nav-links">
-        <a href="">Team</a>
-      </li>
-      <li class="nav-links">
-        <a href="">Sign In</a>
-      </li>
+  <nav class="nav">
+    <picture class="nav__logo">
+      <img src="./images/logo.svg" alt="Fylo">
+    </picture>
+    <ul class="nav__list">
+      <li>Features</li>
+      <li>Team</li>
+      <li>Sign In</li>
     </ul>
   </nav>
-</header>
-  <section class="container">
-    <div class="card upper-card">
-      <div class="image-container upper-image">
-        <img src="./images/illustration-1.svg" alt="accessing image"/>
-      </div>
-      <div class="upper-text text-container">
-        <h2 class="headings">All your files in one secure location, accessible anywhere.</h2>
-        <p>Fylo stores your most important files in one secure location. 
-          Access them wherever you need, share and collaborate with friends, 
-          family, and co-workers.
-        </p>
-        <form id="form-top" class="form ">
-          <div class="form-control upper">
-            <label for="email"></label>
-            <input type="text" id="email" placeholder="Enter your email...">
-            <small class="upper-error">Error message</small>
-          </div>
-          <button id="btn-submit" class="cta-buttons">Get started</button>
-        </form>
-      </div>
+  <header class="header">
+    <picture class="header__logo">
+      <img src="./images/illustration-1.svg" alt="illustration-1">
+    </picture>
+    <article class="header__text">
+      <h1>All your files in one secure location, accessible anywhere.</h1>
+      <p>Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+      </p>
+      <form action="#" class="form top_form" id="header__form">
+        <label for="email" class="top__label">
+          <input type="text" name="email" id="email" placeholder="Enter your email...">
+          <small class="error-msg hidden">Error Message</small>
+        </label>
+        <button class="submit-btn">Get Started</button>
+      </form>
+    </article>
+  </header>
+  <main class="main">
+    <div class="top-image">
+      <img src="./images/bg-curve-mobile.svg" alt="">
     </div>
-  </section>
-  <section class="outer-bottom-container">
-    <div class="card lower-card container">
-      <div class="curve">
-        <img src="./images/bg-curve-mobile.svg" alt="" class="mob-curve curve-img">
-        <img src="./images/bg-curve-desktop.svg" alt="" class="desktop-curve curve-img">
-      </div>
-      <div class="image-container lower-image">
-        <img src="./images/illustration-2.svg" alt="Info">
-      </div>
-      <div class="lower-text text-container">
-        <h4 class="headings">Stay productive, wherever you are</h4>
-        <p class="start-pos">Never let location be an issue when accessing your files. Fylo has you 
-          covered for all of your file storage needs.</p>
-        <p class="start-pos">
+    <article class="box">
+      <picture class="box__logo">
+        <img src="./images/illustration-2.svg" alt="illustration-2">
+      </picture>
+      <div class="box__text">
+        <h4>Stay productive, wherever you are</h4>
+        <p class="gray-para">
+          Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+        </p>
+        <p class="gray-para">
           Securely share files and folders with friends, family and colleagues for 
-          live collaboration. No email attachments required!
+  live collaboration. No email attachments required!
         </p>
-      </div>
-      <a href="#" class="cta-buttons" id="faq">
-        <p class="faq-text">See how Fylo works</p><img src="./images/icon-arrow.svg" alt="->" class="arrow-icon">
-      </a>
-      <div class="user-card">
-        <div class="quotes">
-          <img src="./images/icon-quotes.svg" alt="quotes">
+        <div class="box__link">
+          <a href="#">See how Fylo works</a>
+          <img src="./images/icon-arrow.svg" alt="" class="arrow-img">
         </div>
-        <p class="user-review">
-          Fylo has improved our team productivity by an order of magnitude. Since 
-          making the switch our team has become a well-oiled collaboration machine.
-        </p>
-        <div class="user-id-box">
-          <img src="./images/avatar-testimonial.jpg" alt="Kyle Burton">
-          <h5 class="name headings">Kyle Burton <span class="titles">Founder & CEO, Huddle</span></h5>
+        <div class="box__user-review">
+          <picture class="quote">
+            <img src="./images/icon-quotes.svg" alt="quote">
+          </picture>
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="user-review">
+            <picture class="user-image">
+              <img src="./images/avatar-testimonial.jpg" alt="Kyle">
+            </picture>
+            <p class="bold">Kyle Burton <span class="designation">Found & CEO, Huddle</span></p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="early-access ">
-    <h2 class="headings">Get early access today</h2>
-    <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
-      If you have any questions, our support team would be happy to help you.
-    </p>
-    <form id="form-bottom" class="form lower-form">
-      <div class="form-control lower">
-        <label for="email"></label>
-        <input type="text" id="email-bottom" placeholder="email@example.com">
-        <small class="sub-error">Error message</small>
-      </div>
-      <button id="btn-submit" class="cta-buttons">Get started For Free</button>
-    </form>
-  </section>
-  <footer class="full-footer">
-    <div class="footer-flex container">
-      <div class="contact-details"> 
-        <!-- Box1 -->
-        <div class="logo">
-          <img src="./images/logo.svg" alt="">
-        </div>
-        <div class="phone icon">
-          <img src="./images/icon-phone.svg" alt="">
+    </article>
+    <article class="early-access">
+      <h3>Get early access today</h3>
+      <p>
+        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+      </p>
+      <form action="#" class="form bottom__form" id="second__form">
+        <label for="email" class="bottom__label">
+          <input type="text" name="email" id="email" placeholder="email@example.com">
+          <small class="error-msg hidden">Error Message</small>
+        </label>
+        <button class="submit-btn">Get Started For Free</button>
+      </form>
+    </article>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <picture class="logo-invert">
+      <img src="./images/logo.svg" alt="Fylo">
+    </picture>
+    <div class="footer__grid">
+      <!-- Box-1 col-1 -->
+      <div class="contact-info self-box">
+        <!-- Call icon -->
+        <div class="phone footer__flex-row">
+          <img src="./images/icon-phone.svg" alt="phone">
           <p>Phone: +1-543-123-4567</p>
         </div>
-        <div class="email icon">
-          <img src="./images/icon-email.svg" alt="">
+        <!-- Email -->
+        <div class="email footer__flex-row">
+          <img src="./images/icon-email.svg" alt="email">
           <p>example@fylo.com</p>
         </div>
       </div>
-      <!-- Box 2 -->
-      <div class="link-group group-left">
-        <p><a href="#" class="self-links">About Us</a></p>
-        <p><a href="#" class="self-links">Jobs</a></p>
-        <p><a href="#" class="self-links">Press</a></p>
-        <p><a href="#" class="self-links">Blog</a></p>
+      <!-- Box-2 col-2 -->
+      <div class="more-info self-box">
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Jobs</a></p>
+        <p><a href="#">Press</a></p>
+        <p><a href="#">Blog</a></p>
       </div>
-      <!-- Box 3 -->
-      <div class="link-group group-right">
-        <p><a href="#" class="self-links">Contact Us</a></p>
-        <p><a href="#" class="self-links">Terms</a></p>
-        <p><a href="#" class="self-links">Privacy</a></p>
+      
+      <!-- Box-3 col-3 -->
+      <div class="more-info self-box">
+        <p><a href="#">Contact Us</a></p>
+        <p><a href="#">Terms</a></p>
+        <p><a href="#">Privacy</a></p>
       </div>
-      <!-- Box 4 -->
+
+      <!-- Box-4 col-4 -->
       <div class="social-icons">
-        <a href="#" class="social-icon self-links">
+        <a href="#" class="social-icon" aria-label="facebook">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="#" class="social-icon self-links">
+        <a href="#" class="social-icon" aria-label="twitter">
           <i class="fa-brands fa-twitter"></i>
         </a>
-        <a href="#" class="social-icon self-links">
+        <a href="#" class="social-icon" aria-label="instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
     </div>
   </footer>
-  <div class="attri-container">
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
-    </p>
-  </div>
-
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+  </p>
   <!-- Script -->
   <script src="./app.js"></script>
 </body>
