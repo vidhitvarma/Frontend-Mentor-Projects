@@ -74,6 +74,7 @@ html{
 
 .header{
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0 1.75rem 9.125rem;
   text-align: center;
@@ -163,7 +164,17 @@ html{
 
 /* Second box */
 
-.box__logo{
+
+.mob-curve{
+  width: 100%;
+}
+
+.desktop-curve{
+  display: none;
+}
+
+.box__logo img{
+  margin: auto;
   width: 20rem;
   height: 15rem;
 }
@@ -196,7 +207,6 @@ html{
 /* Link */
 
 .box__link{
-  width:10.125rem ;
   padding-bottom: 0.25rem;
   border-bottom: 1px solid var(--moderate-cyan);
   display: flex;
@@ -306,6 +316,10 @@ html{
   border: 1px solid var(--para-gray);
 }
 
+.bottom__form input:focus{
+  outline: none;
+}
+
 .bottom__label{
   position: relative;
 }
@@ -393,4 +407,67 @@ footer,.footer__grid,.self-box{
 
 .attribution a:hover{
   color: var(--error);
+}
+
+
+@media(min-width: 26.875rem) and (max-width: 48rem){
+  .nav__logo{
+    width: 8rem;
+  }
+
+  .header__logo{
+    width: 40rem;
+  }
+
+  .header__text{
+    width: 30rem;
+  }
+
+  .top_form{
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  .top_form label{
+    width: 65%;
+  }
+
+  .top_form button{
+    width: 35%;
+  }
+
+  .box__logo img{
+    width: 30rem;
+    height: 22.625rem;
+  }
+
+  .box__text h4{
+    font-size: 1.5rem;
+  }
+
+  .gray-para{
+    padding: 0 6rem;
+  }
+
+  .box__link img{
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .box__link a{
+    font-size: 1rem;
+  }
+
+  .box__user-review{
+    width: 22.5rem;
+  }
+
+  .box__user-review p{
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .designation{
+    font-size: 0.65rem;
+  }
 }
