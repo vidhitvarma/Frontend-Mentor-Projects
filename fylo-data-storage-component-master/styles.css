@@ -233,9 +233,9 @@ footer a:hover {
 		height: 100vh;
 		background-color: var(--very-dark-blue);
 		background-image: url(./images/bg-desktop.png);
-		background-position: bottom left;
-		background-size: auto;
-		background-position: bottom 3rem center;
+		background-size: 100% 50%;
+		background-position: bottom;
+		overflow: hidden;
 	}
 
 	main {
