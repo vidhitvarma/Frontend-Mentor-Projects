@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+	--grad-start: hsl(6, 100%, 80%);
+	--grad-end: hsl(335, 100%, 65%);
+
+	/* Base colors */
+	--pale-blue: hsl(243, 100%, 93%);
+	--grayish-blue: hsl(229, 7%, 55%);
+	--dark-blue: hsl(228, 56%, 26%);
+	--very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+li,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+}
+
+body {
+	color: var(--pale-blue);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 70vh;
+	background: url(./images/bg-mobile.png) no-repeat;
+}
+
+/* main-component */
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1.1rem;
+}
+
+.main-component {
+	display: flex;
+	flex-direction: column;
+	gap: 2.3rem;
+	padding: 2.78rem 2.93rem;
+	width: 23.3rem;
+	border-radius: 0.714rem 7.143rem 0.714rem 0.714rem;
+	background-color: var(--dark-blue);
+}
+
+.logo {
+	width: 9.714rem;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	gap: 1.143rem;
+}
+
+.icon {
+	width: 3.439rem;
+	height: 3.439rem;
+	border-radius: 0.714rem;
+	background-color: var(--very-dark-blue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* description */
+
+.description {
+	position: relative;
+	border-radius: 0.714rem;
+	background-color: var(--dark-blue);
+	width: 23.3rem;
+	height: 11.43rem;
+	padding: 1.85rem 2.12rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.85rem;
+}
+
+.highlight {
+	font-weight: 700;
+}
+
+/* Progress Bar */
+
+.progress-bar {
+	width: 100%;
+	height: 1.43rem;
+	background-color: var(--very-dark-blue);
+	border-radius: 0.95rem;
+	border: 3px solid var(--very-dark-blue);
+	overflow: hidden;
+}
+
+.progress-slider {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	width: 75%;
+	height: 100%;
+	border-radius: 0.95rem;
+	background: linear-gradient(to right, var(--grad-start), var(--grad-end));
+}
+
+.progress-ball {
+	/* position: absolute;
+	right: 0.25rem;
+	top: 0.15rem; */
+	margin-right: 0.2rem;
+	background-color: #fff;
+	width: 0.714rem;
+	height: 0.714rem;
+	border-radius: 50%;
+}
+
+.limit {
+	font-size: 0.9rem;
+	font-weight: 700;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pop-up-menu {
+	border-radius: 0.75rem;
+	position: absolute;
+	bottom: -2.5rem;
+	width: 12.86rem;
+	height: 5.14rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	color: var(--very-dark-blue);
+}
+
+.triangle {
+	display: none;
+	position: absolute;
+	bottom: -1.5rem;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 1.62rem solid #fff;
+	border-left: 1.62rem solid transparent;
+}
+
+.bold {
+	font-weight: 700;
+	font-size: 2.46rem;
+	display: flex;
+	gap: 0.6rem;
+}
+
+.light {
+	font-size: 0.85rem;
+	color: var(--grayish-blue);
+	text-transform: uppercase;
+	align-self: center;
+	letter-spacing: 1px;
+}
+
+footer {
+	position: absolute;
+	bottom: 1rem;
+	text-align: center;
+	color: var(--grayish-blue);
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 27.5rem) and (max-width: 48rem) {
+	body {
+		background-color: var(--very-dark-blue);
+		background-image: url(./images/bg-desktop.png);
+		background-position: top 50% left 25%;
+	}
+}
+
+@media (min-width: 48.125rem) {
+	body {
+		height: 100vh;
+		background-color: var(--very-dark-blue);
+		background-image: url(./images/bg-desktop.png);
+		background-position: bottom 4.25rem left 0;
+		background-size: contain;
+	}
+
+	main {
+		flex-direction: row;
+		align-items: flex-end;
+		gap: 2.143rem;
+	}
+
+	.description {
+		align-items: flex-start;
+		width: 38.58rem;
+		height: 11rem;
+	}
+
+	.pop-up-menu {
+		top: -4rem;
+		right: 2rem;
+		border-bottom-right-radius: 0;
+	}
+
+	.triangle {
+		display: block;
+	}
+
+	footer {
+		font-size: 1.2rem;
+	}
+}
