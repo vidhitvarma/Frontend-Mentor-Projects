@@ -55,8 +55,12 @@ body {
 	justify-content: center;
 	align-items: center;
 
-	height: 70vh;
-	background: url(./images/bg-mobile.png) no-repeat;
+	height: 80vh;
+	background-color: var(--very-dark-blue);
+	background-image: url(./images/bg-mobile.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
 }
 
 /* main-component */
@@ -114,6 +118,11 @@ main {
 
 .highlight {
 	font-weight: 700;
+}
+
+.description,
+.main-component {
+	box-shadow: 0 75px 100px -30px rgba(0, 0, 0, 0.25);
 }
 
 /* Progress Bar */
@@ -224,14 +233,19 @@ footer a:hover {
 		height: 100vh;
 		background-color: var(--very-dark-blue);
 		background-image: url(./images/bg-desktop.png);
-		background-position: bottom 4.25rem left 0;
-		background-size: contain;
+		background-position: bottom left;
+		background-size: auto;
+		background-position: bottom 3rem center;
 	}
 
 	main {
 		flex-direction: row;
 		align-items: flex-end;
 		gap: 2.143rem;
+	}
+
+	.main-component .main-component {
+		width: 25rem;
 	}
 
 	.description {
