@@ -9,7 +9,8 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title> 
 </head>
 <body>
-  <nav class="nav">
+  <!-- Navbar -->
+  <nav class="nav container">
     <picture class="nav__logo">
       <img src="./images/logo.svg" alt="Fylo">
     </picture>
@@ -19,86 +20,83 @@
       <li>Sign In</li>
     </ul>
   </nav>
-  <header class="header">
-    <picture class="header__logo">
-      <img src="./images/illustration-1.svg" alt="illustration-1">
-    </picture>
-    <article class="header__text">
+  <!-- Header -->
+  <header>
+    <!-- First Block -->
+    <section class="top-header container">
+      <picture class="top-image">
+        <img src="./images/illustration-1.svg" alt="illustration-1">
+      </picture>
       <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p>Fylo stores your most important files in one secure location. 
-        Access them wherever you need, share and collaborate with friends, 
-        family, and co-workers.
-      </p>
-      <form action="#" class="form top_form" id="header__form">
-        <label for="email" class="top__label">
+      <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+      <form action="#" class="form upper-form">
+        <label for="up-email">
           <input type="text" name="email" id="email" placeholder="Enter your email...">
-          <small class="error-msg hidden">Error Message</small>
+          <small class="error-msg hidden">Error</small>
         </label>
-        <button class="submit-btn">Get Started</button>
+        <button type="submit">Get Started</button>
       </form>
-    </article>
+    </section>
   </header>
-  <main class="main">
-    <div class="top-image">
-      <img src="./images/bg-curve-mobile.svg" alt="" class="mob-curve">
+  <!-- Main Section -->
+  <main>
+    <div class="curve">
+      <img src="./images/bg-curve-mobile.svg" alt="" class="mobile-curve">
       <img src="./images/bg-curve-desktop.svg" alt="" class="desktop-curve">
     </div>
-    <article class="box">
-      <picture class="box__logo">
+    <!-- Second block -->
+    <section class="information container">
+      <picture class="block-image">
         <img src="./images/illustration-2.svg" alt="illustration-2">
       </picture>
-      <div class="box__text">
-        <h4>Stay productive, wherever you are</h4>
-        <p class="gray-para">
-          Never let location be an issue when accessing your files. Fylo has you 
+      <h4>Stay productive, wherever you are</h4>
+      <p class="information__para">
+        Never let location be an issue when accessing your files. Fylo has you 
   covered for all of your file storage needs.
-        </p>
-        <p class="gray-para">
-          Securely share files and folders with friends, family and colleagues for 
+      </p>
+      <p class="information__para">
+        Securely share files and folders with friends, family and colleagues for 
   live collaboration. No email attachments required!
+      </p>
+      <a href="#" class="information__link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a>
+      <div class="information__user">
+        <picture class="quote">
+          <img src="./images/icon-quotes.svg" alt="quote">
+        </picture>
+        <p>
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
         </p>
-        <div class="box__link">
-          <a href="#">See how Fylo works</a>
-          <img src="./images/icon-arrow.svg" alt="" class="arrow-img">
-        </div>
-        <div class="box__user-review">
-          <picture class="quote">
-            <img src="./images/icon-quotes.svg" alt="quote">
+        <div class="user-info">
+          <picture class="user-image">
+            <img src="./images/avatar-testimonial.jpg" alt="Kyle">
           </picture>
-          <p>
-            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-          </p>
-          <div class="user-review">
-            <picture class="user-image">
-              <img src="./images/avatar-testimonial.jpg" alt="Kyle">
-            </picture>
-            <p class="bold">Kyle Burton <span class="designation">Found & CEO, Huddle</span></p>
-          </div>
+          <p class="bold">Kyle Burton <span class="designation">Found & CEO, Huddle</span></p>
         </div>
       </div>
-    </article>
-    <article class="early-access">
-      <h3>Get early access today</h3>
-      <p>
-        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
-      </p>
-      <form action="#" class="form bottom__form" id="second__form">
-        <label for="email" class="bottom__label">
-          <input type="text" name="email" id="email" placeholder="email@example.com">
-          <small class="error-msg hidden">Error Message</small>
-        </label>
-        <button class="submit-btn">Get Started For Free</button>
-      </form>
-    </article>
+    </section>
   </main>
-  <!-- Footer -->
-  <footer>
-    <picture class="logo-invert">
+  <article class="early-access">
+    <div class="container">
+      <h4>Get early access today</h4>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.</p>
+      <form action="#" class="form lower-form">
+        <label for="low-email">
+          <input type="text" name="email" id="low-email" placeholder="email@example.com">
+          <small class="error-msg hidden">Error</small>
+        </label>
+        <button type="submit">Get Started For Free</button>
+      </form>
+  </div>
+  </article>
+  <footer class="footer">
+    <picture class="footer-logo">
       <img src="./images/logo.svg" alt="Fylo">
     </picture>
-    <div class="footer__grid">
-      <!-- Box-1 col-1 -->
-      <div class="contact-info self-box">
+    <!-- Grid container -->
+    <div class="grid-container">
+      <!-- ----- Col-1 ----- -->
+      <div class="contact-box">
         <!-- Call icon -->
         <div class="phone footer__flex-row">
           <img src="./images/icon-phone.svg" alt="phone">
@@ -110,22 +108,20 @@
           <p>example@fylo.com</p>
         </div>
       </div>
-      <!-- Box-2 col-2 -->
+      <!-- ----- Col-2 ----- -->
       <div class="more-info self-box">
         <p><a href="#">About Us</a></p>
         <p><a href="#">Jobs</a></p>
         <p><a href="#">Press</a></p>
         <p><a href="#">Blog</a></p>
       </div>
-      
-      <!-- Box-3 col-3 -->
+      <!-- ----- Col-3 ----- -->
       <div class="more-info self-box">
         <p><a href="#">Contact Us</a></p>
         <p><a href="#">Terms</a></p>
         <p><a href="#">Privacy</a></p>
       </div>
-
-      <!-- Box-4 col-4 -->
+      <!-- ----- Col-4 ----- -->
       <div class="social-icons">
         <a href="#" class="social-icon" aria-label="facebook">
           <i class="fa-brands fa-facebook-f"></i>
@@ -139,10 +135,10 @@
       </div>
     </div>
   </footer>
-  <p class="attribution">
+  <!-- <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
-  </p>
+  </p> -->
   <!-- Script -->
   <script src="./app.js"></script>
 </body>
