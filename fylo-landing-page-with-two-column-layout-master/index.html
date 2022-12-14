@@ -10,85 +10,91 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="nav container">
-    <picture class="nav__logo">
-      <img src="./images/logo.svg" alt="Fylo">
-    </picture>
-    <ul class="nav__list">
-      <li>Features</li>
-      <li>Team</li>
-      <li>Sign In</li>
-    </ul>
-  </nav>
-  <!-- Header -->
   <header>
-    <!-- First Block -->
-    <section class="top-header container">
-      <picture class="top-image">
-        <img src="./images/illustration-1.svg" alt="illustration-1">
+    <nav class="nav">
+      <picture class="nav__logo">
+        <img src="./images/logo.svg" alt="Fylo" class="fylo-top">
       </picture>
-      <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-      <form action="#" class="form upper-form">
-        <label for="up-email">
-          <input type="text" name="email" id="email" placeholder="Enter your email...">
-          <small class="error-msg hidden">Error</small>
-        </label>
-        <button type="submit">Get Started</button>
-      </form>
-    </section>
+      <ul class="nav__list">
+        <li>Features</li>
+        <li>Team</li>
+        <li>Sign In</li>
+      </ul>
+    </nav>
   </header>
-  <!-- Main Section -->
+  <!-- Main -->
   <main>
-    <div class="curve">
-      <img src="./images/bg-curve-mobile.svg" alt="" class="mobile-curve">
-      <img src="./images/bg-curve-desktop.svg" alt="" class="desktop-curve">
-    </div>
-    <!-- Second block -->
-    <section class="information container">
-      <picture class="block-image">
-        <img src="./images/illustration-2.svg" alt="illustration-2">
+    <!-- Box - 1 -->
+    <article class="upper-box">
+      <picture>
+        <img src="./images/illustration-1.svg" alt="illustration-1" class="upper-img">
       </picture>
-      <h4>Stay productive, wherever you are</h4>
-      <p class="information__para">
-        Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-      </p>
-      <p class="information__para">
-        Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-      </p>
-      <a href="#" class="information__link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a>
-      <div class="information__user">
-        <picture class="quote">
-          <img src="./images/icon-quotes.svg" alt="quote">
-        </picture>
-        <p>
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+      <section class="upper-box__description">
+        <h2>All your files in one secure location, accessible anywhere.</h2>
+        <p>Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
         </p>
-        <div class="user-info">
-          <picture class="user-image">
-            <img src="./images/avatar-testimonial.jpg" alt="Kyle">
+        <form action="#" class="top-form form">
+          <label for="top-email">
+            <input type="text" id="top-email" name="email" class="email" placeholder="Enter your email...">
+            <small class="error-msg hidden">Error Message</small>
+          </label>
+          <button type="submit">Get Started</button>
+        </form>
+      </section>
+    </article>
+    <!-- Box-2 -->
+    <article class="lower-box">
+      <picture>
+        <img src="./images/illustration-2.svg" alt="" class="lower-img">
+      </picture>
+      <section class="lower-box__description">
+        <h4>Stay productive, wherever you are</h4>
+        <p class="lower-box__para">
+          Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+        </p>
+        <p class="lower-box__para">
+          Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+        </p>
+        <a href="#" class="information__link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a>
+        <section class="user-box">
+          <picture class="quote">
+            <img src="./images/icon-quotes.svg" alt="quote">
           </picture>
-          <p class="bold">Kyle Burton <span class="designation">Found & CEO, Huddle</span></p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <article class="early-access">
-    <div class="container">
-      <h4>Get early access today</h4>
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
-        If you have any questions, our support team would be happy to help you.</p>
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="user-info">
+            <picture class="user-image">
+              <img src="./images/avatar-testimonial.jpg" alt="Kyle">
+            </picture>
+            <p class="bold">Kyle Burton <span class="designation">Found & CEO, Huddle</span></p>
+          </div>
+        </section>
+      </section>
+    </article>
+    <!-- Box 3 -->
+    <article class="early-access">
+      <section class="early-access__description">
+        <h4>Get early access today</h4>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.
+        </p>
+      </section>
       <form action="#" class="form lower-form">
-        <label for="low-email">
-          <input type="text" name="email" id="low-email" placeholder="email@example.com">
-          <small class="error-msg hidden">Error</small>
-        </label>
-        <button type="submit">Get Started For Free</button>
+          <label for="low-email">
+            <input type="text" name="email" id="low-email" placeholder="email@example.com" class="email"> 
+            <small class="error-msg hidden">Error</small>
+          </label>
+          <button type="submit">Get Started For Free</button>
       </form>
-  </div>
-  </article>
+    </article>
+  </main>
+  <!-- Footer -->
   <footer class="footer">
     <picture class="footer-logo">
       <img src="./images/logo.svg" alt="Fylo">
@@ -98,12 +104,12 @@
       <!-- ----- Col-1 ----- -->
       <div class="contact-box">
         <!-- Call icon -->
-        <div class="phone footer__flex-row">
+        <div class="footer__flex-row">
           <img src="./images/icon-phone.svg" alt="phone">
           <p>Phone: +1-543-123-4567</p>
         </div>
         <!-- Email -->
-        <div class="email footer__flex-row">
+        <div class="footer__flex-row">
           <img src="./images/icon-email.svg" alt="email">
           <p>example@fylo.com</p>
         </div>
@@ -135,10 +141,11 @@
       </div>
     </div>
   </footer>
-  <!-- <p class="attribution">
+  
+  <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
-  </p> -->
+  </p>  
   <!-- Script -->
   <script src="./app.js"></script>
 </body>
