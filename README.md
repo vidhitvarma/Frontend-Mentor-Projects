@@ -36,3 +36,5 @@ No.|  Name  |  Code  | Live |
 | --- | --- | --- | ---|
 |1|Testimonials grid section|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/testimonials-grid-section-main)|[Live](https://testimonials-grid-vivarma.netlify.app/)|
 |2|Huddle landing page with alternating feature blocks|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/huddle-landing-page-with-alternating-feature-blocks-master)|[Live](https://huddle-landing-page-alt-vivarma.netlify.app/)|
+|3| Fylo landing  page with two column layout| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/fylo-landing-page-with-two-column-layout-master)|[Live](https://fylo-landing-page-two-col-vivarma.netlify.app/)|
+|4| Fylo data storage component | [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/fylo-data-storage-component-master)| [Live](https://fylo-data-storage-component-vivarma.netlify.app/)|
