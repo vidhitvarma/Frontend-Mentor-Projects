@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap');
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+
+	/* Neutral */
+
+	--dark-grayish-blue: #4c545d;
+	--grayish-blue: #9eabb2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Buttons and header */
+
+button {
+	border: none;
+	cursor: pointer;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 1.75rem;
+	height: 3.11rem;
+	width: 17.2778rem;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 600;
+	font-size: 1.778rem;
+	color: var(--dark-grayish-blue);
+}
+
+html {
+	font-size: 18px;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+	background: url(./images/bg-header-mobile.png) no-repeat;
+}
+
+.flex-align {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header,
+main {
+	color: var(--grayish-blue);
+	text-align: center;
+}
+
+main {
+	padding: 0 1.778rem 0;
+}
+
+header {
+	padding: 6.833rem 1.778rem 0;
+	gap: 2.667rem;
+	margin-bottom: 8.889rem;
+}
+
+.header-logo {
+	width: 6.944rem;
+	height: 6.944rem;
+	margin-bottom: 0.44rem;
+}
+
+.header-text {
+	gap: 0.875rem;
+}
+
+header p {
+	color: var(--grayish-blue);
+}
+
+.para-text {
+	font-size: 0.889rem;
+	line-height: 1.45rem;
+}
+
+.button-box {
+	gap: 1.33rem;
+}
+
+.button {
+	border-bottom: 3px solid #000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.green-button {
+	border-bottom-color: #00a189;
+	background-color: var(--strong-cyan);
+}
+
+.button:is(:hover, :active) {
+	opacity: 75%;
+}
+
+.blue-button {
+	border-bottom-color: #4b5ce0;
+	background-color: var(--light-blue);
+}
+
+/* Top article */
+
+.top-article {
+	gap: 3.5554rem;
+	margin-bottom: 10.334rem;
+}
+
+.main-header {
+	font-size: 1.5556rem;
+}
+
+.top-article-desc {
+	gap: 1rem;
+}
+
+.description {
+	gap: 2.665rem;
+}
+
+.description-box {
+	gap: 0.889rem;
+}
+
+.description-box h2 {
+	font-size: 1.33rem;
+}
+
+.description-box:nth-of-type(2) {
+	padding: 0 1rem;
+}
+
+/* 2nd box */
+
+.mid-article {
+	font-size: 0.889rem;
+	gap: 3.5556rem;
+	margin-bottom: 7rem;
+}
+
+/* More info */
+
+.more-info {
+	gap: 5rem;
+	margin-bottom: 9.445rem;
+}
+
+.more-info__header h2 {
+	font-size: 1.556rem;
+}
+
+.more-info-grid {
+	display: grid;
+	gap: 3.111rem;
+}
+
+.info-box picture {
+	margin-bottom: 2rem;
+}
+
+.info-box h2 {
+	font-size: 1.33rem;
+}
+
+.companies {
+	gap: 3.11rem;
+	margin-top: 2.33rem;
+}
+
+/* Bottom clipboard */
+
+.bottom-clipboard {
+	margin-bottom: 9.445rem;
+}
+
+/* footer */
+
+.footer {
+	text-align: center;
+	gap: 5rem;
+	padding: 2.889rem;
+	background-color: #f1f1f1;
+}
+
+.main-footer {
+	gap: 2.22rem;
+}
+
+.footer-logo {
+	width: 3.11rem;
+	height: 3.11rem;
+}
+
+.more-links {
+	display: grid;
+	gap: 1.11rem;
+}
+
+.more-links a {
+	color: var(--dark-grayish-blue);
+}
+
+.more-links a:is(:hover, :active) {
+	color: var(--strong-cyan);
+}
+
+.social-icons {
+	flex-direction: row;
+	gap: 1.333rem;
+}
+
+.social-icon {
+	justify-content: center;
+	border: 1px solid var(--dark-grayish-blue);
+	border-radius: 0.5rem;
+	color: var(--dark-grayish-blue);
+	cursor: pointer;
+	width: 2rem;
+	height: 2rem;
+}
+
+.social-icon:hover {
+	border-color: var(--strong-cyan);
+	color: var(--strong-cyan);
+}
+
+/* Attribution */
+
+.attribution {
+	font-size: 0.85rem;
+	color: var(--dark-grayish-blue);
+}
+
+.attribution a {
+	color: var(--light-blue);
+}
+
+.attribution a:hover {
+	color: var(--strong-cyan);
+}
