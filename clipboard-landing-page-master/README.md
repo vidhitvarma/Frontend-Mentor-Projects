@@ -24,8 +24,8 @@ Users should be able to:
 
 
 ### Links
-- [Solution](https://clipboard-landing-page-vivarma.netlify.app/)
-- [Live](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/clipboard-landing-page-master)
+- [Solution](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/clipboard-landing-page-master)
+- [Live](https://clipboard-landing-page-vivarma.netlify.app/)
 
 ## Author
 - Github - [Vidhit Varma] (https://github.com/vidhitvarma)
