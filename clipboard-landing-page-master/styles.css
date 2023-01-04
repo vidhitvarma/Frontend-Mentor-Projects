@@ -301,6 +301,7 @@ header p {
 
 	.header {
 		gap: 1.5rem;
+		padding-top: 7.2778rem;
 	}
 
 	.header-text,
@@ -340,6 +341,7 @@ header p {
 	.top-grid-container {
 		margin-left: -12rem;
 		display: grid;
+		align-items: center;
 		grid-template-columns: 65% 34%;
 		gap: 1%;
 	}
@@ -374,7 +376,6 @@ header p {
 
 	.more-info-grid {
 		gap: 1.6667rem;
-
 		grid-template-columns: repeat(3, 1fr);
 	}
 
