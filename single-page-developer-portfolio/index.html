@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <div class="bg-icons">
+      <img src="./images/pattern-rings.svg" alt="" class="rings">
+      <img src="./images/pattern-circle.svg" alt="" class="circle">
+    </div>
+    <nav class="navigation flex-display">
+      <p class="name medium-header">adamkeyes</p>
+      <ul class="navigation__list flex-display">
+        <a href="#" aria-label="Github" class="social-icon flex-display">
+          <i class="fa-brands fa-github fa-lg"></i>
+        </a>
+        <a href="#" aria-label="Reddit" class="social-icon flex-display">
+          <i class="fa-brands fa-reddit fa-lg"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-icon flex-display">
+          <i class="fa-brands fa-linkedin fa-lg"></i>
+        </a>
+        <a href="#" aria-label="Twitter" class="social-icon flex-display">
+          <i class="fa-brands fa-twitter fa-lg"></i>
+        </a>
+      </ul>
+    </nav>
+    <div class="hero-icon flex-display">
+      <img src="./images/image-profile-mobile.webp" alt="" class="mobile-img">
+      <img src="./images/image-profile-tablet.webp" alt="" class="tablet-img">
+      <img src="./images/image-profile-desktop.webp" alt="" class="desktop-img">
+    </div>
+    
+  </header>
+  <main class="main">
+    <article class="introduction flex-display">
+      <h1 class="introduction__name sub-header">Nice to meet you! I'm <span class='green-highlight'>Adam Keyes</span>.</h1>
+      <p class="introduction__description">Based in the UK, I'm a front-end developer passionate about 
+        building accessible web apps that users love.</p>
+        <button class="button contact">Contact me</button>
+    </article>
+    <!-- -------------------Skills------------------------ -->
+    <section class="grid-container skills">
+      <div class="skill flex-display">
+        <h2 class="skill-name">HTML</h2>
+        <p class="skill-experience">4 Years Experience</p>
+      </div>
+      <div class="skill flex-display">
+        <h2 class="skill-name">CSS</h2>
+        <p class="skill-experience">4 Years Experience</p>
+      </div>
+      <div class="skill flex-display">
+        <h2 class="skill-name">JavaScript</h2>
+        <p class="skill-experience">4 Years Experience</p>
+      </div>
+      <div class="skill flex-display">
+        <h2 class="skill-name">Accessibility</h2>
+        <p class="skill-experience">4 Years Experience</p>
+      </div>
+      <div class="skill flex-display">
+        <h2 class="skill-name">React</h2>
+        <p class="skill-experience">3 Years Experience</p>
+      </div>
+      <div class="skill flex-display">
+        <h2 class="skill-name">Sass</h2>
+        <p class="skill-experience">3 Years Experience</p>
+      </div>
+      <div class="bg-icons">
+        <img src="./images/pattern-rings.svg" alt="" class="rings">
+      </div>
+    </section>
+    <!-- --------------- Projects Section -------- -->
+    <section class="projects flex-display">
+      <div class="projects__header flex-display">
+        <h1 class="sub-header">Projects</h1>
+        <button class="button contact">Contact me</button>
+      </div>
+      <article class="projects-container flex-display">
+        <!-- Project 1 -->
+        <div class="project project-1 flex-display">
+          <picture class="project__bg">
+            <img src="./images/thumbnail-project-1-small.webp" alt="project-image" class="mobile-preview">
+            <img src="./images/thumbnail-project-1-large.webp" alt="project-image" class="desktop-preview">
+          </picture>
+          <h2 class="medium-header project__title">Design Portfolio</h2>
+          <div class="project__skills flex-display">
+            <p class="para-font">html</p>
+            <p class="para-font">css</p>
+          </div>
+          <div class="project__buttons flex-display">
+            <button class="button contact">View Project</button>
+            <button class="button contact">View Code</button>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project project-2 flex-display">
+          <picture class="project__bg">
+            <img src="./images/thumbnail-project-2-small.webp" alt="project-image" class="mobile-preview">
+            <img src="./images/thumbnail-project-2-large.webp" alt="project-image" class="desktop-preview">
+          </picture>
+          <h2 class="medium-header project__title">E-learning landing page</h2>
+          <div class="project__skills flex-display">
+            <p class="para-font">html</p>
+            <p class="para-font">css</p>
+          </div>
+          <div class="project__buttons flex-display">
+            <button class="button contact">View Project</button>
+            <button class="button contact">View Code</button>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project project-3 flex-display">
+          <picture class="project__bg">
+            <img src="./images/thumbnail-project-3-small.webp" alt="project-image" class="mobile-preview">
+            <img src="./images/thumbnail-project-3-large.webp" alt="project-image" class="desktop-preview">
+          </picture>
+          <h2 class="medium-header project__title">Todo web app</h2>
+          <div class="project__skills flex-display">
+            <p class="para-font">html</p>
+            <p class="para-font">css</p>
+            <p class="para-font">javascript</p>
+          </div>
+          <div class="project__buttons flex-display">
+            <button class="button contact">View Project</button>
+            <button class="button contact">View Code</button>
+          </div>
+        </div> 
+        <!-- Project 4-->
+        <div class="project project-4 flex-display">
+          <picture class="project__bg">
+            <img src="./images/thumbnail-project-4-small.webp" alt="project-image" class="mobile-preview">
+            <img src="./images/thumbnail-project-4-large.webp" alt="project-image" class="desktop-preview">
+          </picture>
+          <h2 class="medium-header project__title">Entertainment web app</h2>
+          <div class="project__skills flex-display">
+            <p class="para-font">html</p>
+            <p class="para-font">css</p>
+            <p class="para-font">javascript</p>
+          </div>
+          <div class="project__buttons flex-display">
+            <button class="button contact">View Project</button>
+            <button class="button contact">View Code</button>
+          </div>
+        </div> 
+        <!-- Project 5 -->
+        <div class="project project-5 flex-display">
+          <picture class="project__bg">
+            <img src="./images/thumbnail-project-5-small.webp" alt="project-image" class="mobile-preview">
+            <img src="./images/thumbnail-project-5-large.webp" alt="project-image" class="desktop-preview">
+          </picture>
+          <h2 class="medium-header project__title">Memory Game</h2>
+          <div class="project__skills flex-display">
+            <p class="para-font">html</p>
+            <p class="para-font">css</p>
+            <p class="para-font">javascript</p>
+          </div>
+          <div class="project__buttons flex-display">
+            <button class="button contact">View Project</button>
+            <button class="button contact">View Code</button>
+          </div>
+        </div> 
+        <!-- Project 6 -->
+        <div class="project project-6 flex-display">
+          <picture class="project__bg">
+            <img src="./images/thumbnail-project-6-small.webp" alt="project-image" class="mobile-preview">
+            <img src="./images/thumbnail-project-6-large.webp" alt="project-image" class="desktop-preview">
+          </picture>
+          <h2 class="medium-header project__title">Art gallery showcase</h2>
+          <div class="project__skills flex-display">
+            <p class="para-font">html</p>
+            <p class="para-font">css</p>
+            <p class="para-font">javascript</p>
+          </div>
+          <div class="project__buttons flex-display">
+            <button class="button contact">View Project</button>
+            <button class="button contact">View Code</button>
+          </div>
+        </div> 
+      </article>
+    </section>
+  </main>
+  <footer class="flex-display footer">
+    <section class="contact-footer-section flex-display">
+      <div class="bg-icons">
+        <img src="./images/pattern-rings.svg" alt="" class="rings">
+      </div>
+      <article class="flex-display contact">
+        <h2 class="sub-header">Contact</h2>
+        <p>I would love to hear about your project and how I could help. Please 
+          fill in the form, and I’ll get back to you as soon as possible.</p>
+      </article>
+      <form class="contact-form flex-display" id="contact-form">
+        <label for="name">
+          <input type="text" name="name" id="name" placeholder="name"/>
+          <small class="exclamation hidden">!</small>
+          <small class="error-msg hidden" id="error-msg">Error message</small>
+        </label>
+        <label for="email">
+          <input type="text" name="email" id="email" placeholder="email"/>
+          <small class="exclamation hidden">!</small>
+          <small class="error-msg hidden" id="error-msg">Error message</small>
+        </label>
+        <label for="message">
+          <textarea name="message" id="message" placeholder="message" rows="3"></textarea>
+        </label> 
+        <button class="button contact">Send message</button>
+      </form>
+    </section>
+    <nav class="navigation flex-display footer-nav">
+      <p class="name medium-header">adamkeyes</p>
+      <ul class="navigation__list flex-display">
+        <a href="#" aria-label="Github" class="social-icon flex-display">
+          <i class="fa-brands fa-github fa-lg"></i>
+        </a>
+        <a href="#" aria-label="Reddit" class="social-icon flex-display">
+          <i class="fa-brands fa-reddit fa-lg"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-icon flex-display">
+          <i class="fa-brands fa-linkedin fa-lg"></i>
+        </a>
+        <a href="#" aria-label="Twitter" class="social-icon flex-display">
+          <i class="fa-brands fa-twitter fa-lg"></i>
+        </a>
+      </ul>
+    </nav>
+    <article class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+    </article>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
