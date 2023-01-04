@@ -383,8 +383,10 @@ header p {
 		justify-content: space-evenly;
 	}
 
-	.info-box:nth-of-type(2) h2 {
-		margin-top: -1.5rem;
+	.info-box:nth-of-type(2) h2,
+	.info-box:nth-of-type(2) .para-text,
+	.info-box:nth-of-type(2) picture {
+		margin-top: -1.35rem;
 	}
 
 	.companies {
