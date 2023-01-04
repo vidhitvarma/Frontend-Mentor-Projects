@@ -38,6 +38,7 @@ select {
 /* Buttons and header */
 
 button {
+	font-size: 1rem;
 	border: none;
 	cursor: pointer;
 	font-weight: 700;
@@ -206,6 +207,7 @@ header p {
 /* footer */
 
 .footer {
+	width: 100%;
 	text-align: center;
 	gap: 5rem;
 	padding: 2.889rem;
@@ -242,7 +244,7 @@ header p {
 .social-icon {
 	justify-content: center;
 	border: 1px solid var(--dark-grayish-blue);
-	border-radius: 0.5rem;
+	border-radius: 50%;
 	color: var(--dark-grayish-blue);
 	cursor: pointer;
 	width: 2rem;
@@ -267,4 +269,141 @@ header p {
 
 .attribution a:hover {
 	color: var(--strong-cyan);
+}
+
+/* Tablet design */
+
+@media (min-width: 27rem) and (max-width: 48.625rem) {
+	body {
+		background: url(./images/bg-header-desktop.png) no-repeat;
+	}
+}
+
+/* Desktop design */
+
+@media (min-width: 48.75rem) {
+	body {
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 80rem;
+		background: url(./images/bg-header-desktop.png) no-repeat top center;
+	}
+
+	.tablet-image {
+		width: 45.111rem;
+	}
+
+	.desktop-image {
+		width: 41.778rem;
+	}
+
+	.header {
+		gap: 1.5rem;
+	}
+
+	.header-text,
+	.top-article-desc,
+	.bottom-clipboard {
+		width: 40.5556rem;
+	}
+
+	.header-text .para-text {
+		font-size: 1.1112rem;
+	}
+
+	.header-text h1 {
+		font-size: 2.556rem;
+	}
+	.button-box {
+		flex-direction: row;
+	}
+
+	.button {
+		width: 12.611rem;
+	}
+
+	.main-header {
+		font-size: 2rem;
+	}
+
+	.para-text {
+		font-size: 1rem;
+	}
+
+	.top-article {
+		max-width: 67.333rem;
+		width: 100%;
+	}
+
+	.top-grid-container {
+		margin-left: -12rem;
+		display: grid;
+		grid-template-columns: 65% 34%;
+		gap: 1%;
+	}
+
+	.top-article-desc {
+		grid-column: 1/3;
+		justify-self: center;
+	}
+
+	.description-box {
+		align-items: flex-start;
+		text-align: start;
+	}
+	.description-box:nth-of-type(2) {
+		padding: 0;
+	}
+
+	.info-box {
+		max-width: 19.445rem;
+	}
+
+	.top-article h2,
+	.info-box h2 {
+		font-size: 1.333rem;
+	}
+
+	.more-info-grid,
+	.companies,
+	.main-footer {
+		max-width: 61.664rem;
+	}
+
+	.more-info-grid {
+		gap: 1.6667rem;
+
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.info-box:nth-of-type(2) {
+		justify-content: space-evenly;
+	}
+
+	.info-box:nth-of-type(2) h2 {
+		margin-top: -1.5rem;
+	}
+
+	.companies {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.main-footer {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.more-links {
+		width: 31.944rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.solo-container {
+		align-items: flex-start;
+	}
 }
