@@ -40,14 +40,11 @@ select {
 }
 
 html {
+	overflow-x: hidden;
 	color: #fff;
 	background-color: var(--black);
 	font-size: 18px;
 	font-family: 'Space Grotesk', sans-serif;
-}
-
-body {
-	overflow-x: hidden;
 }
 
 header,
@@ -126,6 +123,10 @@ header {
 
 header .navigation__list {
 	margin-bottom: 18rem;
+}
+
+.name {
+	font-weight: 700;
 }
 
 .social-icon {
