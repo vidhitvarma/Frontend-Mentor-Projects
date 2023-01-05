@@ -42,6 +42,10 @@ html {
 	font-family: 'Space Grotesk', sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 header,
 main {
 	padding: 0.889rem;
@@ -259,6 +263,7 @@ header {
 
 .contact-footer-section {
 	position: relative;
+	gap: 3rem;
 }
 
 .footer .rings {
@@ -360,4 +365,30 @@ header {
 
 .contact-form label.success input {
 	border-bottom-color: var(--green);
+}
+
+/* Tablet */
+
+@media (min-width: 26.875rem) and (max-width: 48rem) {
+	header,
+	main {
+		padding: 1.667rem;
+	}
+
+	.name {
+		font-size: 1.778rem;
+	}
+
+	.navigation {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.mobile-img {
+		display: none;
+	}
+}
+
+/* Desktop */
+@media (min-width: 48.125rem) {
 }
