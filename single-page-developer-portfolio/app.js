@@ -1,5 +1,5 @@
 const form = document.getElementById('contact-form');
-const name = document.getElementById('name');
+const userName = document.getElementById('name');
 const email = document.getElementById('email');
 
 
@@ -51,6 +51,6 @@ function isValidEmail(email){
 
 form.addEventListener('submit',function(e){
   e.preventDefault();
-  checkRequired([name,email]);
+  checkRequired([userName,email]);
 })
 

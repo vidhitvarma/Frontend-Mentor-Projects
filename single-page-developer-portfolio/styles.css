@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap';
 
 * {
 	margin: 0;
@@ -373,27 +373,10 @@ header .navigation__list {
 	border-bottom-color: var(--green);
 }
 
-/* Tablet */
-
-@media (min-width: 26.875rem) and (max-width: 48rem) {
-	header,
-	main,
-	.footer {
-		padding: 1.667rem;
-	}
-
+/* Common */
+@media (min-width: 26.875rem) {
 	.name {
 		font-size: 1.778rem;
-	}
-
-	.rings {
-		top: 25%;
-		left: -35%;
-	}
-
-	.circle {
-		left: 92%;
-		top: 70%;
 	}
 
 	.navigation {
@@ -411,17 +394,7 @@ header .navigation__list {
 		display: none;
 	}
 
-	.tablet-img {
-		z-index: -1;
-		display: block;
-		width: 17.889rem;
-		top: -1rem;
-		right: -0.5rem;
-	}
-
 	.introduction {
-		margin-bottom: 0;
-		width: 24.722rem;
 		text-align: start;
 		align-items: flex-start;
 	}
@@ -444,11 +417,6 @@ header .navigation__list {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.skills .rings {
-		top: 75%;
-		left: 80%;
-	}
-
 	.skill-name {
 		font-size: 2.667rem;
 	}
@@ -456,19 +424,11 @@ header .navigation__list {
 	.skill {
 		align-items: flex-start;
 	}
-
 	.skill-experience {
 		font-size: 1rem;
 	}
 
-	.projects {
-		gap: 3rem;
-		padding-bottom: 3rem;
-	}
-
 	.projects-container {
-		column-gap: 1.33rem;
-		row-gap: 3.3335rem;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -477,18 +437,7 @@ header .navigation__list {
 		font-size: 4rem;
 	}
 
-	.footer .rings {
-		left: -85%;
-	}
-
-	.project__bg {
-		width: 19rem;
-		height: 14.0555rem;
-	}
-
 	.contact-footer-section {
-		width: 24.7222rem;
-		padding-bottom: 4rem;
 		border-bottom: none;
 	}
 
@@ -503,7 +452,204 @@ header .navigation__list {
 		align-items: center;
 	}
 }
+/* Tablet */
+
+@media (min-width: 26.875rem) and (max-width: 48rem) {
+	header,
+	main,
+	.footer {
+		padding: 1.667rem;
+	}
+
+	.rings {
+		top: 22%;
+		left: -35%;
+	}
+
+	.circle {
+		left: 92%;
+		top: 70%;
+	}
+
+	.tablet-img {
+		z-index: -1;
+		display: block;
+		width: 17.889rem;
+		top: -1rem;
+		right: -0.5rem;
+	}
+
+	.introduction {
+		margin-bottom: 0;
+		width: 24.722rem;
+	}
+
+	.skills .rings {
+		top: 75%;
+		left: 80%;
+	}
+
+	.projects {
+		gap: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.projects-container {
+		column-gap: 1.33rem;
+		row-gap: 3.3335rem;
+	}
+
+	.footer .rings {
+		left: -85%;
+	}
+
+	.project__bg {
+		width: 19rem;
+		height: 14.0555rem;
+	}
+
+	.contact-footer-section {
+		width: 24.7222rem;
+		padding-bottom: 4rem;
+	}
+}
 
 /* Desktop */
 @media (min-width: 48.125rem) {
+	body {
+		overflow-x: visible;
+		max-width: 80rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	header,
+	main,
+	.contact-footer-section,
+	.footer .navigation {
+		padding: 1.667rem;
+		max-width: 63rem;
+	}
+	header {
+		width: 100%;
+		border-bottom: 2px solid var(--light-gray);
+	}
+
+	.tablet-img {
+		display: none;
+	}
+
+	.header .rings {
+		top: 7.5rem;
+		left: -15.25rem;
+	}
+
+	.header .circle {
+		top: 26.5rem;
+		left: 34rem;
+	}
+
+	.desktop-img {
+		z-index: -1;
+		position: absolute;
+		display: block;
+		width: 24.722rem;
+		top: -2rem;
+		right: 0.51rem;
+	}
+
+	.introduction {
+		max-width: 39.222rem;
+		margin-bottom: 12rem;
+	}
+
+	.introduction__description {
+		max-width: 24.722rem;
+	}
+
+	/* skills */
+
+	.skills {
+		width: 100%;
+		padding-top: 5rem;
+		gap: 5.8rem;
+		border: none;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.skills .rings {
+		top: 17.5rem;
+		left: 55rem;
+	}
+
+	.projects-container {
+		column-gap: 1.667rem;
+		row-gap: 3.8889rem;
+	}
+
+	.project {
+		position: relative;
+	}
+
+	.project:hover .project__buttons {
+		z-index: 1;
+	}
+
+	.project__buttons {
+		z-index: -1;
+		position: absolute;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 81%;
+		background-color: #151515ab;
+	}
+
+	.project__buttons .button {
+		background-color: transparent;
+	}
+
+	.mobile-preview {
+		display: none;
+	}
+
+	.desktop-preview {
+		display: block;
+		width: 30rem;
+		height: 22.222rem;
+	}
+
+	.footer {
+		padding: 4rem 1.667rem 1rem;
+	}
+
+	.footer .rings {
+		top: 14rem;
+		left: -30%;
+	}
+
+	.contact-footer-section {
+		margin-bottom: 3rem;
+		text-align: start;
+		width: 100%;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.contact,
+	.contact-form {
+		align-items: flex-start;
+		max-width: 24.722rem;
+	}
+
+	.contact .sub-header {
+		font-size: 4rem;
+	}
+
+	.attribution {
+		font-size: 1.33rem;
+	}
 }
