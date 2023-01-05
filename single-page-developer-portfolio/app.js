@@ -32,7 +32,7 @@ function removeState(input){
 function showError(input, message){
   let label = input.parentElement;
   label.classList.add('error');
-  let small = label.querySelector('#error-msg');
+  let small = label.querySelector('.error-msg');
   small.innerText = message;
 }
 

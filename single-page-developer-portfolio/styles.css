@@ -14,6 +14,7 @@
 	--light-gray: #d9d9d9;
 	--white: #ffffff;
 }
+
 ul {
 	list-style: none;
 }
@@ -646,6 +647,11 @@ header .navigation__list {
 	.contact-form {
 		align-items: flex-start;
 		max-width: 24.722rem;
+	}
+
+	.exclamation {
+		font-size: 1.33rem;
+		border: none;
 	}
 
 	.contact .sub-header {
