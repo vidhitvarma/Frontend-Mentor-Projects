@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Fylo dark theme page">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav flex-display">
+      <picture class="header__logo">
+        <img src="./images/logo.svg" alt="Fylo">
+      </picture>
+      <ul class="nav-list flex-display">
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Team</a>
+        </li>
+        <li>
+          <a href="#">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main flex-display">
+    <div class="bg-icons">
+      <img src="./images/bg-curvy-mobile.svg" alt="" class="mobile-bg">
+      <img src="./images/bg-curvy-desktop.svg" alt="" class="desktop-bg">
+    </div>
+    <!-- main-intro -->
+    <section class="site-intro flex-display">
+      <picture class="intro-illustration">
+        <img src="./images/illustration-intro.png" alt="">
+      </picture>
+      <h1 class="mid-header">
+        All your files in one secure location, accessible anywhere.
+      </h1>
+      <p>Fylo stores all your most important files in one secure location. Access them wherever 
+        you need, share and collaborate with friends family, and co-workers.
+      </p>
+      <button class="button header-button">Get Started</button>
+    </section>
+    <!-- Grid container -->
+    <section class="main__information">
+      <!-- Box-1 -->
+      <div class="information-box flex-display">
+        <picture class="information-icon">
+          <img src="./images/icon-access-anywhere.svg" alt="icon">
+        </picture>
+        <h2 class="info-header">Access your files, anywhere</h2>
+        <p>The ability to use a smartphone, tablet, or computer to access your account means your 
+          files follow you everywhere.
+        </p>
+      </div>
+      <!-- Box-2 -->
+      <div class="information-box flex-display">
+        <picture class="information-icon">
+          <img src="./images/icon-security.svg" alt="icon">
+        </picture>
+        <h2 class="info-header">Security you can trust</h2>
+        <p>
+          2-factor authentication and user-controlled encryption are just a couple of the security 
+          features we allow to help secure your files.
+        </p>
+      </div>
+      <!-- Box-3 -->
+      <div class="information-box flex-display">
+        <picture class="information-icon">
+          <img src="./images/icon-collaboration.svg" alt="icon">
+        </picture>
+        <h2 class="info-header">Real-time collaboration</h2>
+        <p>
+          Securely share files and folders with friends, family and colleagues for live collaboration. 
+          No email attachments required.
+        </p>
+      </div>
+      <!-- Box-4 -->
+      <div class="information-box flex-display">
+        <picture class="information-icon">
+          <img src="./images/icon-any-file.svg" alt="icon">
+        </picture>
+        <h2 class="info-header">Store any type of file</h2>
+        <p>
+          Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+          file types to be securely stored and shared.
+        </p>
+      </div>
+    </section>
+    <!-- Another information box -->
+    <section class="productive__box flex-display">
+      <picture class="information-illustration">
+        <img src="./images/illustration-stay-productive.png" alt="productive-info">
+      </picture>
+      <div class="productive__description flex-display">
+        <h2 class="info-header">Stay productive, wherever you are</h2>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+          storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+          attachments required.
+        </p>
+        <a href="#" class="productive__link flex-display">
+          See how Fylo works <img src="./images/icon-arrow.svg" alt="">
+        </a>
+      </div>
+    </section>
+    <!-- User reviews -->
+    <section class="user-reviews flex-display">
+      <img src="./images/bg-quotes.png" alt="" class="quotes">
+      <!-- User-1 -->
+      <div class="user flex-display">
+        <p class="user__text">
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.
+        </p>
+        <div class="user__info">
+          <img src="./images/profile-1.jpg" alt="" class="user__icon">
+          <div class="user__info--id flex-display">
+            <p class="user__name">Satish Patel</p>
+            <p class="user__designation">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <!-- User-2 -->
+      <div class="user flex-display">
+        <p class="user__text">
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.
+        </p>
+        <div class="user__info">
+          <img src="./images/profile-2.jpg" alt="" class="user__icon">
+          <div class="user__info--id flex-display">
+            <p class="user__name">Bruce McKenzie</p>
+            <p class="user__designation">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <!-- User-3 -->
+      <div class="user flex-display">
+        <p class="user__text">
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+  become a well-oiled collaboration machine.
+        </p>
+        <div class="user__info">
+          <img src="./images/profile-3.jpg" alt="" class="user__icon">
+          <div class="user__info--id flex-display">
+            <p class="user__name">Iva Boyd</p>
+            <p class="user__designation">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Early Access -->
+    <section class="early-access flex-display">
+      <h2>Get early access today</h2>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+        questions, our support team would be happy to help you.
+      </p>
+      <form action="#" class="form flex-display" id="form">
+        <label for="email" class="label">
+          <input type="text" name="email" id="email" placeholder="email@example.com">
+          <small class="error-msg hidden">Error Message</small>
+        </label>
+        <button class="button">Get Started For Free</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer flex-display">
+    <picture class="footer__logo">
+      <img src="./images/logo.svg" alt="Fylo">
+    </picture>
+    <!-- Grid container -->
+    <div class="grid-container">
+      <!-- Contact-box-1 -->
+      <div class="contact-box-1">
+        <div class="location contact-flex flex-display">
+          <img src="./images/icon-location.svg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+      </div>
+      <!-- Contact-box-2 -->
+      <div class="contact-box-2">
+        <div class="call contact-flex flex-display">
+          <img src="./images/icon-phone.svg" alt="">
+          <p>+1-543-123-4567</p>
+        </div>
+        <div class="email contact-flex flex-display">
+          <img src="./images/icon-email.svg" alt="">
+          <p>example@fylo.com</p>
+        </div>
+      </div>
+      <!-- more links -1 -->
+      <div class="more-info self-box flex-display">
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Jobs</a></p>
+        <p><a href="#">Press</a></p>
+        <p><a href="#">Blog</a></p>
+      </div>
+      <!-- more links -2 -->
+      <div class="more-info self-box flex-display">
+        <p><a href="#">Contact Us</a></p>
+        <p><a href="#">Terms</a></p>
+        <p><a href="#">Privacy</a></p>
+      </div>
+    <!-- Socials -->
+      <div class="social-icons flex-display">
+        <a href="#" class="social-icon flex-display" aria-label="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon flex-display" aria-label="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon flex-display" aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+    </p>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
