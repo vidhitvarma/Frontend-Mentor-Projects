@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+<body>
+  <header class="header flex-display padding-box">
+    <nav class="header__navigation flex-display">
+      <picture class="logo">
+        <img src="./assets/logo.svg" alt="logo">
+      </picture>
+      <button class="button__cta black">Free Consultation</button>
+    </nav>
+    <article class="header__description flex-display">
+      <h1>Design solutions made easy</h1>
+      <p class="light-font">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+    </article>
+  </header>
+  <main class="main">
+    <!-- Grid design -->
+    <section class="design-patches grid-container">
+      <div class="design-patch graphics-box">
+        <img src="./assets/pattern-graphic-design.svg" alt="">
+        <p>Graphics Design</p>
+      </div>
+      <div class="design-patch ui-box">
+        <img src="./assets/pattern-ui-ux.svg" alt="">
+        <p>UI/UX</p>
+      </div>
+      <div class="design-patch apps-box">
+        <img src="./assets/pattern-apps.svg" alt="">
+        <p>Apps</p> 
+      </div>
+      <div class="design-patch illustrations-box">
+        <img src="./assets/pattern-illustrations.svg" alt="">
+        <p>Ilustrations</p>
+      </div>
+      <div class="design-patch photography-box">
+        <img src="./assets/pattern-photography.svg" alt="">
+        <p>Photography</p>
+      </div>
+      <div class="design-patch motion-box">
+        <img src="./assets/pattern-motion-graphics.svg" alt="">
+        <p>Motion Graphics</p>
+      </div>
+    </section>
+    <!-- User -->
+    <section class="user flex-display padding-box">
+      <picture class="user__image">
+        <img src="./assets/image-amy.webp" alt="amy">
+      </picture>
+      <div class="user__introduction flex-display">
+        <h2 class="user__header mini-header">
+          I’m Amy, and I’d love to work on your next project
+        </h2>
+        <p class="light-font">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
+          to complete mobile apps. I’m also handy with a camera!
+        </p>
+        <button class="button__cta orange">Free Consultation</button>
+      </div>
+    </section>
+    <!-- Carousel -->
+    <section class="carousel flex-display">
+      <h2>My Work</h2>
+      <div class="carousel__images flex-display" id="carousel__images">
+        <img src="./assets/image-slide-1.jpg" alt="first-image" class="carousel-image">
+        <img src="./assets/image-slide-2.jpg" alt="second-image" class="carousel-image">
+        <img src="./assets/image-slide-3.jpg" alt="third-image" class="carousel-image">
+        <img src="./assets/image-slide-4.jpg" alt="fourth-image" class="carousel-image">
+        <img src="./assets/image-slide-5.jpg" alt="fifth-image" class="carousel-image">
+      </div>
+      <div class="carousel__arrows flex-display">
+        <button class="arrow flex-display black" id="left-btn">
+          <img src="./assets/icon-arrow-left.svg" alt="">
+        </button>
+        <button class="arrow flex-display black" id="right-btn">
+          <img src="./assets/icon-arrow-right.svg" alt="">
+        </button>
+      </div>
+    </section>
+    
+  </main>
+  <footer class="footer flex-display padding-box">
+    <section class="upper-footer flex-display">
+    <div class="booking flex-display">
+      <h2 class="booking__header mini-header">Book a call with me</h2>
+      <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
+        free consultation. Then we can move forward from there.
+      </p>
+    </div>
+    <button class="button__cta orange">Free Consultation</button>
+    </section>
+    <nav class="footer__navigation flex-display">
+      <picture class="logo">
+        <img src="./assets/logo.svg" alt="logo">
+      </picture>
+      <button class="button__cta black">Free Consultation</button>
+    </nav>
+  </footer>
+  <!-- 
+
+  
+  Free Consultation
+
+  My Work
+
+  
+
+  
+
+  Free Consultation
+
+  Free Consultation -->
+  <script src="./app.js"></script>
+</body>
+</html>
