@@ -47,6 +47,10 @@ html {
 	font-family: 'Space Grotesk', sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 header,
 main {
 	padding: 0.889rem;
