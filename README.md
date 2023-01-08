@@ -41,3 +41,4 @@ No.|  Name  |  Code  | Live |
 |5| Clipboard Landing Page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/clipboard-landing-page-master)| [Live](https://clipboard-landing-page-vivarma.netlify.app/)|
 |6| Fylo Dark Theme Landing Page|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/fylo-dark-theme-landing-page-master)|[Live](https://fylo-dark-theme-page-vivarma.netlify.app/)|
 |P1| Single Page Developer Portfolio | [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-page-developer-portfolio)|[Live](https://single-page-dev-portfolio-vivarma.netlify.app/)|
+|P2| Single-page Design Portfolio| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-page-design-portfolio) | [Live](https://single-page-design-portfolio-vivarma.netlify.app/) |
