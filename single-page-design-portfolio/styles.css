@@ -285,6 +285,15 @@ body {
 	font-size: var(--para-small);
 }
 
+.attribution a {
+	color: var(--med-brown);
+}
+
+.attribution a:is(:hover, :active) {
+	color: var(--orange);
+	transition: color 0.25s ease-in;
+}
+
 /* Common */
 
 @media (min-width: 26.875rem) {
