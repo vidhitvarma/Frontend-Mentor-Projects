@@ -189,6 +189,7 @@ h1 {
 }
 
 .main__future h1 {
+	font-weight: 800;
 	color: var(--very-dark-blue);
 }
 
@@ -263,8 +264,15 @@ h1 {
 }
 
 .self-container__description h3 {
+	font-weight: 800;
+	cursor: pointer;
 	color: var(--very-dark-blue);
 	font-size: 1.2rem;
+}
+
+.self-container__description h3:is(:hover, :active) {
+	color: var(--soft-red);
+	transition: color 0.1s ease-in;
 }
 
 .self-container__description p {
