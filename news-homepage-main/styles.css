@@ -378,6 +378,10 @@ h1 {
 		margin-bottom: 0;
 	}
 
+	.highlights h1 {
+		font-size: 2.6667rem;
+	}
+
 	.bottom-containers {
 		grid-template-columns: repeat(3, 1fr);
 	}
