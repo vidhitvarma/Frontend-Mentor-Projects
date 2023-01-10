@@ -323,12 +323,18 @@ h1 {
 		margin-bottom: 3.6667rem;
 	}
 
+	.header__icon img {
+		width: 4.2667rem;
+		height: 2.667rem;
+	}
+
 	.hamburger-menu {
 		display: none;
 	}
 
 	.nav__list {
 		display: flex;
+		font-size: 1rem;
 		gap: 2.6667rem;
 	}
 
@@ -344,6 +350,7 @@ h1 {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 20rem 12.2rem;
 		gap: 2rem;
+		margin-bottom: 0;
 	}
 
 	.main__future picture {
@@ -368,6 +375,7 @@ h1 {
 
 	.highlights {
 		max-width: 23.33rem;
+		margin-bottom: 0;
 	}
 
 	.bottom-containers {
