@@ -9,92 +9,107 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <header class="container">
-    <div class="header-container">
-      <img src="./assets/images/logo.svg" alt="Website logo">
-      <ul class="navbar">
+  <header class="header flex-display">
+    <picture class="header__icon">
+      <img src="./assets/images/logo.svg" alt="">
+    </picture>
+    <nav class="header__nav">
+      <ul class="nav__list">
         <li><a href="#">Home</a></li>
         <li><a href="#">New</a></li>
         <li><a href="#">Popular</a></li>
         <li><a href="#">Trending</a></li>
-        <li><a href="#">Catergories</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <img src="./assets/images/icon-menu.svg" alt="menu" class="hamburger-box">
     </div>
   </header>
-  <main class="container">
-    <div class="grid-container">
-      <div class="main-container">
-        <div class="inner-container">
-          <div class="image-container">
-            <img src="./assets/images/image-web-3-desktop.jpg" alt="desktop-bg" class="desktop-image">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="mobile-bg" class="mobile-image">
-          </div>
-          <h1 class="main-title">The Bright Future of Web 3.0?</h1>
-          <div class="text-container">
-            <p>We dive into the next evolution of the that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
-            </p>
-            <a href="#" class="read-more">read more</a>
-          </div>  <!-- End of text-container-->
-        </div> <!-- End of inner container-->
-      </div> <!--End of main-container-->
-      <div class="sidelines">
-        <h1>New</h1>
-        <!-- Card 1 -->
-        <div class="sidelines-card">
-          <a href="" class="clickable">Hydrogen VS Electric Cars</a>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div> <!-- Card 1 end-->
-
-        <!-- Card 2 -->
-        <div class="sidelines-card">
-          <a href="" class="clickable">The Downsides of AI Artistry</a>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </div> <!-- Card 2 end-->
-
-        <!-- Card 3 -->
-        <div class="sidelines-card">
-          <a href="" class="clickable">Is VC Funding Drying Up?</a>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </div>  <!-- Card 3 end -->
-      </div> <!-- End of sidelines-->
-    </div> <!-- End of grid container-->
-    <div class="bottom-headings container">
-      <!-- Bt-headings 1 -->
-      <div class="bottom-heading bt-first">
-        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro pc">
-        <div class="data">
-          <h1>01</h1>
-          <a href="" class="clickable">Reviving Retro PCs</a>
-          <p>What happens when old PCs are given modern upgrade?</p>
+  <div class="mobile-nav flex-display hidden" id="mobile-nav">
+    <div class="active-display flex-display">
+      <img src="./assets/images/icon-menu-close.svg" alt="" class="hamburger-close">
+      <ul class="mobile__list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </div>
+  </div>
+  <main class="main">
+    <section class="main__future grid-display">
+      <picture class="section__image">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="main-mobile">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="main-desktop">
+      </picture>
+      <!-- <div class="main__future--description flex-display"> -->
+        <h1>The Bright Future of Web 3.0?</h1>
+        <div class="sub-container flex-display">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+          <button class="button">Read more</button>
+        <!-- </div> -->
+      
+      </div>
+    </section>
+    <section class="highlights flex-display">
+      <h1>New</h1>
+      <article class="highlight flex-display">
+        <h2>Hydrogen VS Electric Cars</h2>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
+      <article class="highlight flex-display">
+        <h2>The Downsides of AI Artistry</h2>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
+      <article class="highlight flex-display">
+        <h2>Is VC Funding Drying Up?</h2>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+    
+  </main>
+  <footer class="footer flex-display">
+    <section class="bottom-containers">
+      <article class="self-container flex-display">
+        <picture>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="retro-pc">
+        </picture>
+        <div class="self-container__description flex-display">
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
         </div>
-      </div> <!-- end of header 1-->
-
-      <div class="bottom-heading bt-second">
-        <img src="./assets/images/image-top-laptops.jpg" alt="Top laptops">
-        <div class="data">
-          <h1>02</h1>
-          <a href="" class="clickable">Top 10 Laptops of 2022</a>
-          <p>Our best picks for various needs and budgets</p>
+      </article>
+      <article class="self-container flex-display">
+        <picture>
+          <img src="./assets/images/image-top-laptops.jpg" alt="laptops">
+        </picture>
+        <div class="self-container__description flex-display">
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
         </div>
-      </div> <!-- end of header 2-->
-
-      <div class="bottom-heading bt-third">
-        <img src="./assets/images/image-gaming-growth.jpg" alt="Top laptops">
-        <div class="data">
-          <h1>03</h1>
-          <a href="" class="clickable">Top Growth of Gaming</a>
+      </article>
+      <article class="self-container flex-display">
+        <picture>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="gaming">
+        </picture>
+        <div class="self-container__description flex-display">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
-      </div> <!-- end of header 3-->
-    </div> <!--End of bottom headings -->
-  </main>
-  <footer>
-    <div class="footer-container">
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
-      </p>
-    </div>
+      </article>
+    </section>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+    </p>
   </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
