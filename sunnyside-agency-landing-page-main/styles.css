@@ -447,6 +447,10 @@ h6,
 		border-bottom: 1px solid var(--white);
 	}
 
+	.nav__list li:last-of-type:is(:hover, :active) {
+		border: none;
+	}
+
 	.nav__list {
 		display: flex;
 		align-items: center;
