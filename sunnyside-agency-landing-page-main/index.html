@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+  <header class="header flex-display">
+    <section class="header__top flex-display">
+      <picture class="header__logo">
+        <img src="./images/logo.svg" alt="sunnyside">
+      </picture>
+      <nav class="desktop__nav">
+        <ul class="nav__list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <button class="button">Contact</button>
+        </ul>
+      </nav>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <img src="./images/icon-hamburger.svg" alt="menu">
+      </div>
+    </section>
+    <section class="header__information flex-display">
+      <h1>We are creatives</h1>
+      <picture>
+        <img src="./images/icon-arrow-down.svg" alt="">
+      </picture>
+    </section>
+  </header>
+  <div class="mobile-nav flex-display hidden" id="mobile-nav">
+    <div class="triangle"></div>
+    <ul class="mobile-list flex-display">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#"> Projects</a></li>
+      <button class="button">Contact</button>
+    </ul>
+  </div>
+  <main class="main">
+    <!-- Upper box -->
+    <section class="information-box">
+      <!-- Upper box 1 -->
+      <article class="yellow-box">
+        <div class="yellow-image">
+          <img src="./images/mobile/image-transform.jpg" alt="bg-img" class="mobile-img">
+          <img src="./images/desktop/image-transform.jpg" alt="bg-img" class="desktop-img">
+        </div>
+        <div class="text-box flex-display">
+          <h2 class="text-box__header">Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <button class="main-button yellow-button">
+            <p>Learn more</p>
+            <div class="bottom-line yellow-line"></div>
+          </button>
+        </div>
+      </article>
+      <!-- Upper box 2 -->
+      <article class="red-box">
+        <div class="red-image">
+          <img src="./images/mobile/image-stand-out.jpg" alt="bg-img" class="mobile-img">
+          <img src="./images/desktop/image-stand-out.jpg" alt="bg-img" class="desktop-img">
+        </div>
+        <div class="text-box flex-display">
+          <h2 class="text-box__header">Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+          <button class="main-button red-button">
+            <p>Learn more</p>
+            <div class="bottom-line red-line"></div>
+          </button>
+        </div>
+      </article>
+    </section>
+    <section class="item-box">
+      <!-- Lower box 1 -->
+      <article class="green-box flex-display bottom-box">
+        <h2>Graphic Design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </article>
+      <!-- Lower box 2 -->
+      <article class="blue-box flex-display bottom-box">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </article>
+    </section>
+    <!-- Client testimonials -->
+    <section class="testimonials flex-display">
+      <h3 class="testimonials-header">Client testimonials</h3>
+      <div class="client-box flex-display">
+        <article class="client flex-display">
+          <picture class="client__image">
+            <img src="./images/image-emily.jpg" alt="">
+          </picture>
+          <p class="client__statement">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <div class="client-information flex-display">
+            <h3 class="client-name">Emily R.</h3>
+            <p class="client-designation">Marketing Director</p>
+          </div>
+        </article>
+        <article class="client flex-display">
+          <picture class="client__image">
+            <img src="./images/image-thomas.jpg" alt="">
+          </picture>
+          <p class="client__statement">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="client-information flex-display">
+            <h3 class="client-name">Thomas S.</h3>
+            <p class="client-designation">Chief Operating Officer</p>
+          </div>
+        </article>
+        <article class="client flex-display">
+          <picture class="client__image">
+            <img src="./images/image-jennie.jpg" alt="">
+          </picture>
+          <p class="client__statement">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <div class="client-information flex-display">
+            <h3 class="client-name">Jennie F.</h3>
+            <p class="client-designation">Business Owner</p>
+          </div>
+        </article>
+      </div>
+      
+    </section>
+    <!-- Image-box -->
+    <section class="samples">
+      <picture class="bottom-image">
+        <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk-bottles" class="mobile-bottom-image">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottles" class="desktop-bottom-image">
+      </picture>
+      <picture class="bottom-image">
+        <img src="./images/mobile/image-gallery-orange.jpg" alt="oranges" class="mobile-bottom-image">
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="oranges" class="desktop-bottom-image">
+      </picture>
+      <picture class="bottom-image">
+        <img src="./images/mobile/image-gallery-cone.jpg" alt="cone" class="mobile-bottom-image">
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="cone" class="desktop-bottom-image">
+      </picture>
+      <picture class="bottom-image">
+        <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="cubes" class="mobile-bottom-image">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="cubes" class="desktop-bottom-image">
+      </picture>
+    </section>
+  </main>
+  <footer class="footer flex-display">
+    <section class="upper-footer flex-display">
+      <h1 class="footer-logo">sunnyside</h1>
+      <div class="footer-links flex-display">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </div>
+      <div class="social-icons flex-display">
+        <a href="#" class="social-icon flex-align" aria-label="facebook">
+          <i class="fa-brands fa-square-facebook fa-lg"></i>
+        </a>
+        <a href="#" class="social-icon flex-align" aria-label="instagram">
+          <i class="fa-brands fa-instagram fa-lg"></i>
+        </a>
+        <a href="#" class="social-icon flex-align" aria-label="twitter">
+          <i class="fa-brands fa-twitter fa-lg"></i>
+        </a>
+        <a href="#" class="social-icon flex-align" aria-label="pinterest">
+          <i class="fa-brands fa-pinterest fa-lg"></i>
+        </a>
+      </div>
+      </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+      </div>
+    
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
