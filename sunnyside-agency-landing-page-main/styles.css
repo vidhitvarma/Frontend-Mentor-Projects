@@ -514,6 +514,11 @@ h6,
 		font-weight: 900;
 	}
 
+	.bottom-line {
+		margin-top: -0.65rem;
+		width: 7.8889rem;
+	}
+
 	/* 2nd section */
 
 	.item-box {
