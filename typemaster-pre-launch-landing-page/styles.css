@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap');
+
+:root {
+	--orange-dark: #f16718;
+	--orange-light: #ff9b62;
+	--blue-dark: #162542;
+	--blue-light: #7b8bad;
+	--gray: #e8eff2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+html {
+	font-family: 'Barlow', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	padding: 1.5rem;
+}
+
+.flex-display {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.normal-text {
+	font-weight: 500;
+	color: var(--blue-light);
+	line-height: 1.625rem;
+}
+
+.button {
+	cursor: pointer;
+	border: none;
+	text-transform: uppercase;
+	width: 9.4375rem;
+	height: 3rem;
+	border-radius: 0.5rem;
+	color: var(--blue-dark);
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.header {
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+.main .lg-header {
+	color: var(--blue-dark);
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 3rem;
+}
+
+.light-button {
+	background-color: var(--gray);
+}
+
+.light-button:is(:hover, :active) {
+	background-color: var(--blue-dark);
+	color: #fff;
+	transition: color 0.25s ease-in, background-color 0.25s ease-in;
+}
+
+/* Main */
+
+/* Intro */
+.img-box {
+	border-radius: 1rem;
+}
+
+.intro,
+.keyboards {
+	margin-bottom: 1.5rem;
+}
+
+.intro__description {
+	gap: 2rem;
+}
+
+.intro__cta {
+	align-self: flex-start;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.orange-button {
+	background-color: var(--orange-dark);
+	color: #fff;
+}
+
+.orange-button:is(:hover, :active) {
+	background-color: var(--orange-light);
+	transition: background-color 0.25s ease-in;
+}
+
+.release-date {
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--blue-light);
+}
+
+.intro__background-img {
+	transform: translateX(1.5rem);
+	background: url(./assets/mobile/image-keyboard.jpg);
+	background-size: contain;
+	width: 23.25rem;
+	height: 20.6875rem;
+}
+
+/* Keyboards section */
+
+.keyboards {
+	gap: 4.6875rem;
+}
+
+.keyboard-images {
+	width: 23.4375rem;
+	transform: translateX(-1.5rem);
+	gap: 1.5rem;
+	flex-direction: row;
+}
+
+.keyboard-images .img-box {
+	height: 12.0625rem;
+}
+
+.keyboard-orange {
+	overflow: hidden;
+	position: relative;
+	width: 8.125rem;
+	background: url(./assets/mobile/image-phone-and-keyboard.jpg), #f16718;
+	background-blend-mode: soft-light;
+	background-size: contain;
+}
+
+.keyboard-box {
+	width: 13.75rem;
+	background: url(./assets/mobile/image-glass-and-keyboard.jpg);
+	background-size: contain;
+}
+
+.keyboard__description {
+	text-align: center;
+	gap: 1.5rem;
+}
+
+.keyboard__description .md-header {
+	text-transform: uppercase;
+	width: 15.9375rem;
+	color: var(--blue-dark);
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+/* Features tab */
+
+.features {
+	gap: 4rem;
+	margin-bottom: 6rem;
+}
+
+.feature {
+	gap: 3rem;
+}
+
+.feature .sm-header {
+	width: 12rem;
+	color: var(--blue-dark);
+	font-size: 1.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.feature__description {
+	gap: 1.5rem;
+	text-align: center;
+}
+
+.img-container {
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 65px;
+	height: 65px;
+	background-color: #f16718;
+}
+
+/* Footer */
+.footer {
+	gap: 2rem;
+}
+
+.statement {
+	font-size: 1rem;
+}
+
+.highlight {
+	font-weight: 700;
+}
+
+.attribution {
+	text-align: center;
+	color: var(--blue-light);
+}
+
+.attribution a {
+	color: var(--blue-dark);
+}
+
+.attribution a:is(:hover, :active) {
+	color: var(--orange-dark);
+	transition: color 0.25s ease;
+}
