@@ -320,6 +320,7 @@ body {
 
 @media (min-width: 48.125rem) {
 	body {
+		margin: auto;
 		max-width: 1440px;
 		padding: 6.375rem 0 8.125rem 10.3125rem;
 	}
