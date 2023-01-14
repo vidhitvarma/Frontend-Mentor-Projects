@@ -3,17 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Pod request access landing page challenge">
+  <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
+  <header>
+    <div class="bg-img"></div>
+    <img src="./assets/desktop/bg-pattern-dots.svg" alt="dots" class="dots">
+  </header>
+  <main class="main flex-display">
+    <picture class="logo">
+      <img src="./assets/desktop/logo.svg" alt="pod">
+    </picture>
+    <section class="description flex-display">
+      <h1><span class="green-highlight">Publish your podcasts</span> everywhere.</h1>
+      <p class="text">
+        Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <div class="image-container">
+        <img src="./assets/desktop/spotify.svg" alt="spotify" class="spotify">
+        <img src="/assets/desktop/apple-podcast.svg" alt="apple-podcast" class="apple">
+        <img src="./assets/desktop/google-podcasts.svg" alt="google-podcasts" class="google">
+        <img src="./assets/desktop/pocket-casts.svg" alt="pocket-casts" class="pocket">
+      </div>
+      <form class="form" id="form">
+        <label for="email" class="label">
+          <input type="text" name="email" id="email" placeholder="Email address">
+          <small class="error-msg hidden">Error message</small>
+        </label>
+        <button class="button">Request Access</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+    </p>
+  </footer>
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+<script src="./app.js"></script>
 
-  Request access
 </body>
 </html>
