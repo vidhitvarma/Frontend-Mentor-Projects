@@ -90,6 +90,7 @@ body {
 	flex-direction: row;
 	width: 2.5rem;
 	height: 1.25rem;
+	box-shadow: 0 15px 20px -10px rgba(36, 36, 113, 0.2);
 }
 
 .button {
