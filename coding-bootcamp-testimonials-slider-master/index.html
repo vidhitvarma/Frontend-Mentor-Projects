@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+</head>
+<body>
+  <main class="main">
+    <section class="user flex-display">
+      <div class="user__image flex-display">
+        <div class="user__icon">
+          <img src="./images/image-tanya.jpg" alt="Tanya" class="tanya-user" id="tanya-image">
+          <img src="./images/image-john.jpg" alt="John" class="john-user hide" id="john-image">
+        </div>
+        <div class="arrow-box flex-display">
+          <button class="button left flex-display" aria-label="prev">
+            <img src="./images/icon-prev.svg" alt="<">
+          </button>
+          <button class="button right flex-display" aria-label="next">
+            <img src="./images/icon-next.svg" alt=">">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="testimony flex-display">
+      <div class="quotes">
+        <img src="./images/pattern-quotes.svg" alt="">
+      </div>
+      <div class="tanya-user flex-display user__description" id="tanya-description">
+        <p class="normal-text">
+          “ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”
+        </p>
+        <div class="name-box flex-display">
+          <p class="bold">Tanya Sinclair</p>
+          <p class="light">UX Engineer</p>
+        </div>
+      </div>
+      <div class="john-user flex-display user__description hide" id="john-description">
+        <p class="normal-text">
+          “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
+        </p>
+        <div class="name-box flex-display">
+          <p class="bold">John Tarkpor</p>
+          <p class="light">Junior Front-end Developer</p>
+        </div>
+      </div>
+    </section>
+    
+  </main> 
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank">Vidhit Varma</a>.
+    </div>
+  </footer> 
+  <!-- Script -->
+  <script src="./app.js"></script>
+</body>
+</html>
