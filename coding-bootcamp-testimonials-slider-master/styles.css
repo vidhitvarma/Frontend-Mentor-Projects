@@ -93,6 +93,7 @@ body {
 }
 
 .button {
+	background-color: #fff;
 	cursor: pointer;
 	justify-content: center;
 	border: none;
@@ -101,7 +102,7 @@ body {
 }
 
 .button:is(:hover, :active) {
-	background-color: #f4f4fc;
+	background-color: #e6e6e6;
 	transition: background-color 0.15s ease-in;
 }
 
@@ -166,7 +167,7 @@ body {
 		max-width: 45rem;
 		margin: auto;
 		padding: 1.5625rem 1.5625rem 2.9375rem 5.15625rem;
-		background-position: bottom -4rem left -5rem;
+		background-position: bottom -3rem left -2rem;
 	}
 
 	.main {
