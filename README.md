@@ -3,10 +3,11 @@
 This repository contains my personal solutions to the [Frontend Mentor](https://www.frontendmentor.io/) challenges section.
 
 ## Difficulty
-- [Newbie ](#newbie)
-- [Junior](#junior)
+- [Level 1](#Level-1)
+- [Level 2](#Level-2)
+- [Level 3](#Level-3)
 
-### Newbie
+### Level-1
 No.|  Name  |  Code  | Live | 
 |--- | --- | --- | ---|
 |1|Product Preview Card Component | [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/product-preview-card-component-main) | [Live](https://product-preview-card-vivarma.netlify.app/)|
@@ -32,7 +33,7 @@ No.|  Name  |  Code  | Live |
 |P4|Pod Request access landing page|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/pod-request-access-landing-page)|[Live](https://pod-request-access-page-vivarma.netlify.app/)|
 
 
-### Junior
+### Level-2
 |No.|  Name  |  Code  | Live |
 | --- | --- | --- | ---|
 |1|Testimonials grid section|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/testimonials-grid-section-main)|[Live](https://testimonials-grid-vivarma.netlify.app/)|
@@ -48,3 +49,9 @@ No.|  Name  |  Code  | Live |
 |P2| Single-page Design Portfolio| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-page-design-portfolio) | [Live](https://single-page-design-portfolio-vivarma.netlify.app/) |
 |P3| Typemaster pre-launch landing page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/typemaster-pre-launch-landing-page) | [Live](https://typemaster-pre-launch-page-vivarma.netlify.app/) |
 |P4| Maker pre launch landing page|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/maker-pre-launch-landing-page)|[Live](https://maker-pre-launch-page-vivarma.netlify.app/)|
+
+
+### Level-3
+|No.|  Name  |  Code  | Live |  JS  |
+| --- | --- | --- | ---|---|
+| 1| Chat app illustration| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/chat-app-css-illustration-master)|[Live](https://chat-app-illustrations-vivarma.netlify.app/)|
