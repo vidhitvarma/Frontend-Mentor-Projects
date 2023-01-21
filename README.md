@@ -52,6 +52,6 @@ No.|  Name  |  Code  | Live |
 
 
 ### Level-3
-|No.|  Name  |  Code  | Live |  JS  |
-| --- | --- | --- | ---|---|
-| 1| Chat app illustration| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/chat-app-css-illustration-master)|[Live](https://chat-app-illustrations-vivarma.netlify.app/)|
+|No.|  Name  |  Code  | Live |
+| --- | --- | --- | ---|
+|1| Chat app illustration| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/chat-app-css-illustration-master)| [Live](https://chat-app-illustrations-vivarma.netlify.app/)|
