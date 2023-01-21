@@ -325,6 +325,11 @@ h6,
 	grid-template-rows: repeat(2, 1fr);
 }
 
+.bottom-logo img {
+	width: 9.4445rem;
+	height: 1.8333rem;
+}
+
 .desktop-bottom-image {
 	display: none;
 }
