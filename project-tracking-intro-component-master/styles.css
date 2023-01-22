@@ -213,6 +213,7 @@ body {
 }
 
 .button-box {
+	margin-top: 0.445rem;
 	text-transform: uppercase;
 	gap: 0.95rem;
 	font-size: 0.7778rem;
@@ -356,6 +357,7 @@ body {
 	}
 
 	.description-para {
+		margin-top: 0.5556rem;
 		padding-right: 0;
 		font-size: 1rem;
 		width: 15.7778rem;
@@ -366,6 +368,7 @@ body {
 	}
 
 	.button-box {
+		margin-top: 2.5556rem;
 		gap: 1.333rem;
 	}
 
