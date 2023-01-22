@@ -45,6 +45,7 @@ No.|  Name  |  Code  | Live |
 |7| News Homepage| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/news-homepage-main)|[Live](https://news-home-page-vivarma.netlify.app/)|
 |8| Sunnyside Agency Landing Page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/sunnyside-agency-landing-page-main)|[Live](https://sunnyside-agency-page-vivarma.netlify.app/)|
 |9| Coding bootcamp testimonials slider|[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/coding-bootcamp-testimonials-slider-master)|[Live](https://coding-bootcamp-testimonials-vivarma.netlify.app/)|
+|10| Project tracking intro component |[Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/project-tracking-intro-component-master)|[Live](https://project-tracking-intro-vivarma.netlify.app/)|
 |P1| Single Page Developer Portfolio | [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-page-developer-portfolio)|[Live](https://single-page-dev-portfolio-vivarma.netlify.app/)|
 |P2| Single-page Design Portfolio| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/single-page-design-portfolio) | [Live](https://single-page-design-portfolio-vivarma.netlify.app/) |
 |P3| Typemaster pre-launch landing page| [Code](https://github.com/vidhitvarma/Frontend-Mentor-Projects/tree/main/typemaster-pre-launch-landing-page) | [Live](https://typemaster-pre-launch-page-vivarma.netlify.app/) |
