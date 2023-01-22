@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Project tracking intro component</title>
+</head>
+<body>
+  <div class="background-box"></div>
+  <header class="header flex-display">
+    <picture class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </picture>
+    <nav class="navbar">
+      <ul class="nav__list flex-display">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li class="pop-up"></li>
+        <li class="login"><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <img src="./images/icon-hamburger.svg" alt="" id="hamburger-open">
+      <img src="./images/icon-close.svg" alt="" id="hamburger-close" class="hide">
+    </div>
+  </header>
+  <ul class="mobile-nav flex-display hide" id="mobile-nav">
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li class="pop-up"></li>
+    <li class="login"><a href="#">Login</a></li>
+  </ul>
+  <main class="main flex-display">
+    <div class="main-image"></div>
+    <section class="main-description flex-display">
+      <div class="intro-header flex-display">
+        <div class="status-button button"><p>New</p></div>
+        <h4>Monograph Dashboard</h4>
+      </div>
+      <h1 class="main-header">Powerful insights into your team</h1>
+      <p class="description-para">Project planning and time tracking for agile teams</p>
+      <div class="button-box flex-display">
+        <button class="button cta-button">Schedule a demo</button>
+        <p class="preview">to see a preview</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/vidhitvarma" target="_blank"> Vidhit Varma</a>.
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
