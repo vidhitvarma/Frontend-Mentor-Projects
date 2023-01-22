@@ -220,6 +220,7 @@ body {
 }
 
 .cta-button {
+	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 5px;
 	border: none;
@@ -375,5 +376,10 @@ body {
 	.preview {
 		word-spacing: 0;
 		letter-spacing: 5px;
+	}
+
+	.cta-button {
+		width: 10.2223rem;
+		height: 2.667rem;
 	}
 }
